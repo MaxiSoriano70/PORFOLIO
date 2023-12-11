@@ -30,13 +30,16 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-header img{
+section img{
     border-radius: 20px;
     height: 150px;
     width: 150px;
-    margin: 15px 0px;
+    margin: 10px 0px;
 }
 
 .titulo-principal{
@@ -46,9 +49,9 @@ header img{
 
 .titulo-principal h1{
     color: #FFF;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     margin: 0;
-    padding: 15px 10px;
+    padding: 5px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -99,6 +102,10 @@ main section{
     border-radius: 15px;
     width: 500px;
     margin: 10px 5px;
+}
+
+.tarjeta p{
+    padding: 10px 15px;
 }
 
 .tarjeta ul{
@@ -155,6 +162,17 @@ li span{
 .herramienta p{
     font-size: 16px;
     color: var(--color-blanco);
+}
+
+.link-personalizado{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.link-personalizado:hover{
+    color: var(--color-secundario);
 }
 
 footer nav{
