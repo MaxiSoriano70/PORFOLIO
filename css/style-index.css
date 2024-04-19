@@ -161,6 +161,7 @@ li span{
 
 .herramienta p{
     font-size: 16px;
+    margin: 0;
     color: var(--color-blanco);
 }
 
@@ -198,4 +199,57 @@ footer nav ul li p{
 footer nav ul li a{
     color: var(--color-blanco);
     font-size: 25px;
+}
+
+
+@media (max-width:520px){
+    header{
+        position: static;
+    }
+
+    header nav a{
+        font-size: 14px;
+    }
+
+    .titulo-principal h1{
+        font-size: 18px;
+    }
+
+    .tarjeta{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .tarjeta ul{
+        font-size: 15px
+    }
+
+    .tarjeta h2{
+        font-size: 16px;
+    }
+
+    .tarjeta p{
+        font-size: 15px;
+    }
+
+    .herramienta{
+        padding: 10px;
+    }
+
+    .herramienta i{
+        font-size: 16px;
+    }
+
+    .herramienta p{
+        font-size: 15px;
+        padding: 0;
+    }
+
+    footer nav ul li p{
+        font-size: 12px;
+    }
+
+    footer nav ul li a{
+        font-size: 14px;
+    }
 }
