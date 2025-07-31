@@ -1,0 +1,28 @@
+:root {
+    --color01: #145959;
+    --color02: #1F7A7A;
+    --color03: #0E3D3D;
+    --color04: #2D2D2D;
+    --color05: #F4B942;
+    --color06: #F0C808;
+    --color07: #00BFA6;
+    --color08: #FF6B6B;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #cef9f3;
+    --colorFondoDark: #0f2e2c;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
