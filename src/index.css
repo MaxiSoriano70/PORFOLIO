@@ -1,0 +1,129 @@
+:root {
+    --color-1: #1c7373;
+    --color-2: #005757;
+    --color-3: #b31d3f;
+    --color-4: #d5294d;
+    --color-5: #384295;
+    --color-6: #485fc8;
+    --color-7: #f98f07;
+    --color-8: #ffb220;
+    --color-complementario-I: #c53d6f;
+    --color-complementario-II: #d44e86;
+    --color-fondo-white:#e0e0e0;
+    --color-blanco: #fff;
+    --color-fondo-dark: #1a1a1a;
+    --color-negro: #333333;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.bgColorFondo {
+    background-color: var(--color-fondo-white) !important;
+}
+
+.bgColorPrincipal {
+    background-color: var(--color-1) !important;
+}
+
+.bgColorOpuesto {
+    background-color: var(--color-complementario-I) !important;
+}
+
+.bgDark{
+    background-color: var(--color-fondo-dark) !important;
+}
+
+.btnPersonalized1 {
+    background-color: var(--color-3) !important;
+    color: var(--color-blanco) !important;
+    border: var(--color-3) !important;
+}
+
+.btnPersonalized1:hover {
+    background-color: var(--color-4) !important;
+    color: var(--color-blanco) !important;
+}
+
+.btnPersonalized1:disabled {
+    background-color: #d3d3d3 !important;
+    color: #a9a9a9 !important;
+    cursor: not-allowed !important;
+}
+
+.btnPersonalized2 {
+    background-color: var(--color-5) !important;
+    color: var(--color-blanco) !important;
+    border: var(--color-5) !important;
+}
+
+.btnPersonalized2:hover {
+    background-color: var(--color-6) !important;
+    color: var(--color-blanco) !important;
+}
+
+.btnPersonalized2:disabled {
+    background-color: #d3d3d3 !important;
+    color: #a9a9a9 !important;
+    cursor: not-allowed !important;
+}
+
+.btnPersonalized3 {
+    background-color: var(--color-7) !important;
+    color: var(--color-blanco) !important;
+    border: var(--color-7) !important;
+}
+
+.btnPersonalized3:hover {
+    background-color: var(--color-8) !important;
+    color: var(--color-blanco) !important;
+}
+
+.btnPersonalized3:disabled {
+    background-color: #d3d3d3 !important;
+    color: #a9a9a9 !important;
+    cursor: not-allowed !important;
+}
+
+.btnPersonalized4 {
+    background-color: var(--color-1) !important;
+    color: var(--color-blanco) !important;
+    border: var(--color-1) !important;
+}
+
+.btnPersonalized4:hover {
+    background-color: var(--color-2) !important;
+    color: var(--color-blanco) !important;
+}
+
+.btnPersonalized4:disabled {
+    background-color: #d3d3d3 !important;
+    color: #a9a9a9 !important;
+    cursor: not-allowed !important;
+}
+
+.bgInput {
+    border: 1.8px solid var(--color-2) !important;
+}
+
+.bgInput:focus {
+    border: 2px solid var(--color-2) !important;
+    box-shadow: 0 0 0 0.2rem var(--color-2) !important;
+}
+
+.modoLight{
+    background-color: var(--color-fondo);
+    color: var(--color-negro);
+}
+
+.modoDark{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
