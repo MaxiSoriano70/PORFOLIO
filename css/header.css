@@ -1,0 +1,119 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #F4B942;
+    --color07: #F0C808;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #cef9f3;
+    --colorFondoDark: #0f2e2c;
+}
+
+.sHeader{
+    background-color: var(--color01);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.linkLogo {
+    all: unset;
+    cursor: pointer;
+}
+
+.cLogo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color09);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.link {
+    display: inline-block;
+    padding: 0 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.link:hover {
+    transform: scale(1.05);
+}
+
+.aLink{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.aLink:hover {
+    color: var(--color09);
+}
+
+.btnHeader {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color04);
+    color: var(--colorBlanco);
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnHeader:hover {
+    background-color: var(--color05);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#btnDark{
+    display: none;
+}
+
+.btnHamburguesa{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color04);
+    color: var(--colorBlanco);
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.btnHamburguesa:hover {
+    background-color: var(--color05);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
