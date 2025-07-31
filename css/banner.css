@@ -1,0 +1,116 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #F4B942;
+    --color07: #F0C808;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #cef9f3;
+    --colorFondoDark: #0E0E11;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedorText{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorBlanco);
+    gap: 15px;
+}
+
+.banner .contenedorText .tituloPrincipal{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color07);
+}
+
+.banner .contenedorText .tituloSecundario{
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.banner .contenedorText .textoBienvenida{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.banner .contenedorText .contenedorSkills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenedorSkills .logoSkill {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 750px) {
+    /*RESPONSIVE BANNER*/
+    .banner .contenedorText{
+        width: 100%;
+    }
+
+    .banner .contenedorText .tituloPrincipal{
+        font-size: 2rem;
+    }
+
+    .banner .contenedorText .tituloSecundario{
+        font-size: 1.8rem;
+    }
+
+    .banner .contenedorText .textoBienvenida{
+        font-size: 1rem;
+    }
+
+    .contenedorSkills .logoSkill {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    /*DESCRIPCION BANNER*/
+    .banner .contenedorText .tituloPrincipal{
+        font-size: 1.8rem;
+    }
+
+    .banner .contenedorText .tituloSecundario{
+        font-size: 1.5rem;
+    }
+
+    .banner .contenedorText .textoBienvenida{
+        font-size: 0.8rem;
+    }
+
+    .contenedorSkills .logoSkill {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+}

@@ -1,16 +1,17 @@
 :root {
-    --color01: #145959;
-    --color02: #1F7A7A;
-    --color03: #0E3D3D;
-    --color04: #2D2D2D;
-    --color05: #F4B942;
-    --color06: #F0C808;
-    --color07: #00BFA6;
-    --color08: #FF6B6B;
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #F4B942;
+    --color07: #F0C808;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
     --colorNegro: #000000;
     --colorBlanco: #FFFFFF;
     --colorFondoWhite: #cef9f3;
-    --colorFondoDark: #0f2e2c;
+    --colorFondoDark: #0E0E11;
 }
 
 *{
