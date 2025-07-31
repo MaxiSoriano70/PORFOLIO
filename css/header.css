@@ -11,7 +11,7 @@
     --colorNegro: #000000;
     --colorBlanco: #FFFFFF;
     --colorFondoWhite: #cef9f3;
-    --colorFondoDark: #0f2e2c;
+    --colorFondoDark: #0E0E11;
 }
 
 .sHeader{
@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 15px;
+    position: sticky;
 }
 
 .linkLogo {
@@ -69,6 +70,13 @@
     color: var(--color09);
 }
 
+.sBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .btnHeader {
     display: inline-flex;
     align-items: center;
@@ -109,11 +117,54 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
 }
 
 .btnHamburguesa:hover {
     background-color: var(--color05);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#btnHamburguesa{
+    display: none;
+}
+
+@media (max-width: 680px) {
+    #btnHamburguesa {
+        display: inline-flex;
+    }
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 10px;
+        z-index: 100;
+        width: 100%;
+        background-color: var(--color02);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .navLinks.active {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .link {
+        width: 100%;
+        padding: 12px 20px;
+        display: block;
+        border: 2px solid var(--colorBlanco);
+        border-radius: 8px;
+        text-align: center;
+    }
 }
