@@ -12,6 +12,7 @@
     --colorBlanco: #FFFFFF;
     --colorFondoWhite: #cef9f3;
     --colorFondoDark: #0E0E11;
+    --colorFondoTextDark: #18181B;
 }
 
 .sHeader{
@@ -25,14 +26,25 @@
     z-index: 1000;
 }
 
+.aLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 .linkLogo {
-    all: unset;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .cLogo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--color09);
     overflow: hidden;
@@ -42,8 +54,21 @@
 }
 
 .logo {
-    height: 50px;
+    height: 40px;
     width: auto;
+}
+
+.cNombre{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.txtNombre{
+    color: var(--colorBlanco);
+    font-weight: 500;
 }
 
 .navLinks{
@@ -101,7 +126,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-#btnDark{
+#btnLigth{
     display: none;
 }
 
@@ -131,7 +156,7 @@
     display: none;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 760px) {
     #btnHamburguesa {
         display: inline-flex;
     }
