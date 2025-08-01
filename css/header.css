@@ -1,0 +1,197 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #F4B942;
+    --color07: #F0C808;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #f1fcfb;
+    --colorFondoDark: #0E0E11;
+    --colorFondoTextDark: #18181B;
+}
+
+.sHeader{
+    background-color: var(--color01);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.aLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.linkLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color09);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.cNombre{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.txtNombre{
+    color: var(--colorBlanco);
+    font-weight: 500;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.link {
+    display: inline-block;
+    padding: 0 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.link:hover {
+    transform: scale(1.05);
+}
+
+.aLink{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.aLink:hover {
+    color: var(--color09);
+}
+
+.sBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btnHeader {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color04);
+    color: var(--colorBlanco);
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnHeader:hover {
+    background-color: var(--color05);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#btnLigth{
+    display: none;
+}
+
+.btnHamburguesa{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color04);
+    color: var(--colorBlanco);
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnHamburguesa:hover {
+    background-color: var(--color05);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#btnHamburguesa{
+    display: none;
+}
+
+@media (max-width: 760px) {
+    #btnHamburguesa {
+        display: inline-flex;
+    }
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 10px;
+        z-index: 100;
+        width: 100%;
+        background-color: var(--color02);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .navLinks.active {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .link {
+        width: 100%;
+        padding: 12px 20px;
+        display: block;
+        border: 2px solid var(--colorBlanco);
+        border-radius: 8px;
+        text-align: center;
+    }
+}

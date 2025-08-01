@@ -1,0 +1,38 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #F4B942;
+    --color07: #F0C808;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #f1fcfb;
+    --colorFondoDark: #0E0E11;
+    --colorFondoTextDark: #18181B;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--colorFondoWhite);
+    transition: background-color 0.3s ease;
+    color: var(--colorNegro);
+}
+
+body.dark {
+    background-color: var(--colorFondoDark);
+    color: var(--colorBlanco);
+}

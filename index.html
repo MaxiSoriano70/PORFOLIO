@@ -4,160 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Portfolio profesional de Maximiliano Soriano, desarrollador web full stack.">
+    <meta name="author" content="Maximiliano Soriano">
+    <meta name="keywords" content="Desarrollador Web, Portfolio, Java, React, PHP, Laravel, Full Stack, IT, Maximiliano Soriano">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
-    <title>CV Maximiliano Soriano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/sobreMi.css">
+    <link rel="stylesheet" href="./css/experiencia.css">
+    <title>Maximiliano Soriano</title>
 </head>
 <body>
-    <header>
-        <article class="titulo-principal">
-            <h1>Curriculum Vitae de Maximiliano Soriano</h1>
+    <header class="sHeader">
+        <article class="aLogo">
+            <a class="linkLogo" href="/index.html">
+                <div class="cLogo">
+                    <img class="logo" src="./img/logo.png" alt="Logo-Porlfolio">
+                </div>
+                <div class="cNombre">
+                    <span class="txtNombre">Maximiliano Soriano</span>
+                    <span class="txtNombre">Software Developer</span>
+                </div>
+            </a>
         </article>
         <nav>
-            <ul>
-                <li><a href="#DatosPersonales"><i class="fa-solid fa-user-plus"></i> Datos personales</a></li>
-                <li><a href="#SobreMi"><i class="fa-regular fa-address-card"></i> Sobre mí</a></li>
-                <li><a href="#DatosAcademicos"><i class="fa-solid fa-user-graduate"></i> Datos académicos</a></li>
-                <li><a href="#Cursos"><i class="fa-solid fa-graduation-cap"></i> Cursos</a></li>
-                <li><a href="#ExperienciaLaboral"><i class="fa-solid fa-briefcase"></i> Experiencia laboral</a></li>
-                <li><a href="#Proyectos"><i class="fa-solid fa-heart"></i> Proyectos</a></li>
-                <li><a href="#ConocimientoTecnico"><i class="fa-solid fa-screwdriver-wrench"></i> Con. Técnicos</a></li>
+            <ul class="navLinks">
+                <li class="link"><a class="aLink" href="#sobreMi"><i class="fa-solid fa-id-card"></i> Sobre mí</a></li>
+                <li class="link"><a class="aLink" href=""><i class="fa-solid fa-briefcase"></i> Expeciencia</a></li>
+                <li class="link"><a class="aLink" href=""><i class="fa-solid fa-code"></i> Poyectos</a></li>
             </ul>
         </nav>
+        <div class="sBtns">
+            <button id="btnLigth" class="btnHeader"><i class="fa-regular fa-sun"></i> Light</button>
+            <button id="btnDark" class="btnHeader"><i class="fa-solid fa-moon"></i> Dark</button>
+            <button id="btnHamburguesa" class="btnHamburguesa"><i class="fa-solid fa-bars"></i></button>
+        </div>
     </header>
-    <main>
-        <section>
-            <img src="img/pingu.jpg" alt="Foto-Perfil">
-        </section>
-        <section id="DatosPersonales">
-            <article class="tarjeta">
-                <h2><i class="fa-solid fa-user"></i> Datos personales</h2>
-                <ul>
-                    <li><span>Nombre Completo: </span>Maximiliano Soriano</li>
-                    <li><span>Edad: </span>26 años</li>
-                    <li><span>Domicilio: </span>Salta Capital</li>
-                    <li><span>Teléfono: </span>3874895000</li>
-                    <li><span>Email: </span>maxi.soriano.70.23@gmail.com</li>
-                    <li><span>Linkedin: </span><a class="link-personalizado" href="https://www.linkedin.com/in/maximiliano-soriano" target="_blank">Maximiliano Soriano</a></li>
-                </ul>
+    <main class="sMain">
+        <section class=banner>
+            <article class=contenedorText>
+                <h1 class=tituloPrincipal>Software Developer Full Stack<br>Tec. Analista de Sistemas</h1>
+                <h2 class=tituloSecundario>Maximiliano Soriano</h2>
+                <p class=textoBienvenida> ¡Bienvenid@! En este portfolio encontrarás una muestra de mis proyectos personales, mi formación académica y mi experiencia profesional en IT. Me apasiona seguir aprendiendo y desarrollar soluciones tecnológicas que aporten valor.
+                </p>
+                <div class=contenedorSkills>
+                    <img class="logoSkill" src="./img/java.png" alt="logoJava">
+                    <img class="logoSkill" src="./img/php.png" alt="logoPhp">
+                    <img class="logoSkill" src="./img/js.png" alt="logoJs">
+                    <img class="logoSkill" src="./img/spring-boot-logo.png" alt="logoSprintBoot">
+                    <img class="logoSkill" src="./img/mysql.png" alt="logoMysql">
+                    <img class="logoSkill" src="./img/html-5.png" alt="logoHtml">
+                    <img class="logoSkill" src="./img/css-3.png" alt="logoCss">
+                    <img class="logoSkill" src="./img/bootstrap.png" alt="logoBootstrap">
+                    <img class="logoSkill" src="./img/React.svg.png" alt="logoReact">
+                    <img class="logoSkill" src="./img/git.png" alt="logoGit">
+                </div>
             </article>
         </section>
-        <section id="SobreMi">
-            <article class="tarjeta">
-                <h2><i class="fa-regular fa-address-card"></i> Sobre mí</h2>
-                <p>Soy un Desarrollador web Full Stack, me encuentro en búsqueda de nuevos desafíos en una empresa que me permita potenciar y desarrollar mi profesión. Además soy puntual, responsable, con muchas ganas de aprender nuevas habilidades, capacidad para la resolución de problemas, trabajo en equipo, aprendizaje rápido, atención a detalles y manejo de tiempos.</p>
+        <section id="sobreMi" class="sSobreMi">
+            <h3 class="tituloSobreMi">Sobre mí</h3>
+            <article class="aSobreMi">
+                <div class="cImgSobreMi">
+                    <img class="logoProgramador" src="./img/programador.png" alt="logoProgramador">
+                </div>
+                <div class="cTxtSobreMi">
+                    <p class="txtSobreMi">Hola, me llamo Maximiliano Soriano y soy Desarrollador Web Full Stack en búsqueda de mi primera experiencia profesional en relación de dependencia en IT. Cuento con formación y experiencia adquirida en proyectos propios y prácticas profesionales en empresas del sector, utilizando tecnologías como Java (Spring Boot), React, PHP, Laravel, MySQL, HTML, CSS, JavaScript y Bootstrap. Me destaco por ser responsable, puntual y proactivo, con gran motivación por aprender, capacidad para resolver problemas, trabajar en equipo y adaptarme rápidamente a nuevos entornos y herramientas.</p>
+                </div>
             </article>
         </section>
-        <section id="DatosAcademicos">
-            <article class="tarjeta">
-                <h2><i class="fa-solid fa-user-graduate"></i> Datos académicos</h2>
-                <ul>
-                    <li><span>Tec. Desarrollador de Software: </span>UPATECO. 2022 - Cursando.</li>
-                    <li><span>Tec. Analista en Sistemas: </span>Instituto Superior del Milagro N°8207. Cursado 2018 - 2020.</li>
-                    <li><span>Secundario: </span>Dr. Arturo Illia N°5076. Cursado 2010 - 2015.</li>
-                </ul>
-            </article>
-        </section>
-        <section id="Cursos">
-            <article class="tarjeta">
-                <h2><i class="fa-solid fa-graduation-cap"></i> Cursos</h2>
-                <ul>
-                    <li><span>Full Stack Developer: </span>Digital House 2023 - Cursando.</li>
-                    <li><span>Introducción a la Programación en Python: </span>Duración: 36hs cátedras IITA. Año 2023.</li>
-                    <li><span>Introducción a la Programación en JAVA: </span>Duración: 48hs cátedras Argentina Programa. Año 2023.</li>
-                    <li><span>Diseño Grafico BA: </span>Duración: 32hs cátedras. BA Multiplica 2.0 Jov x Jov. Año 2023.</li>
-                    <li><span>Desarrolador Web Full Stack en PHP: </span>Duración 96hs. Neoris Becas UTN.BA. Año 2022</li>
-                    <li><span>Desarrollador Full Stack .NET: </span>Duración 130hs. Telecom Arg. y Educación IT. Año 2021.</li>
-                    <li><span>Técnico de Hardware de PC: </span>Duración: 144hs, cátedras. INI computación. Año 2018.</li>
-                    <li><span>Secretario Ejecutivo en informática: </span>Duración: 144hs, cátedras.
-                    INI computación. Año 2017.</li>
-                </ul>
-            </article>
-        </section>
-        <section id="ExperienciaLaboral">
-            <article class="tarjeta">
-                <h2><i class="fa-solid fa-briefcase"></i> Experiencia Laboral</h2>
-                <ul>
-                    <li><span>Atención al cliente (Balbi): </span>Atención al cliente, remarcar de precio, control de stock y reposición del mismo.</li>
-                    <li><span>Desarrollador trainee (Silemtium Apps): </span> Aprendí a desarrollar interfaces con Flutter y a trabajar de manera colaborativa con GitHub. Duración 6 meses.</li>
-                    <li><span>Cajero (Super Vea): </span> Recepción, entrega y custodiar dinero en efectivo, cobros con tarjeta de crédito y debito (extracciones del cliente hasta $15000), a fin de lograr la recaudación de ingresos de la institución y la cancelación de pagos que correspondan a través de caja. Duración 2 meses.</li>
-                    <li><span>Servicio Técnico de PC (Independiente): </span> Limpieza y mantenimiento para PC y Notebook, formateo y puesta a punto de equipos, armado de PC, respaldo de datos, instalación de programas, cambio de hardware. Duración 1 año.</li>
-                    <li><span>Prof. de Excel  (Concesionaria Jeep): </span> Enseñe a resolver problemas de optimización, realizar análisis estadísticos, preparar diagramas recopilar información y crear listas, etc. Duración 2 meses.</li>
-                    <li><span>Cadete (Independiente): </span> Pagos de impuestos, alquileres, retiros, transferencias, etc. Duración: 2 años.</li>
-                    <li><span>Atención al cliente (Almacén): </span> Atención al cliente, control de stock y reposición del mismo. Duración: 2 meses.</li>
-                </ul>
-            </article>
-        </section>
-        <section id="Proyectos">
-            <article class="tarjeta">
-                <h2><i class="fa-solid fa-heart"></i> Proyectos</h2>
-                <ul>
-                    <li><span>Moot-Mate: </span>Proyecto de chat Front-End responsive desarrollado con html y css. <a class="link-personalizado" href="https://front-end-moot-mate.netlify.app/">Click</a></li>
-                    <li><span>Store-Vidrios: </span>Proyecto Front-End responsive desarrollado con bootstrap, html, css y js. <a class="link-personalizado" href="https://front-end-vidrios-store.netlify.app/">Click</a></li>
-                    <li><span>PetShop Store: </span>Proyecto Front-End responsive desarrollado con html, css y js. <a class="link-personalizado" href="https://front-end-petshop-store.netlify.app/" target="_blank">Click</a></li>
-                    <li><span>Parrillada: </span>Proyecto Front-End responsive desarrollado con html, css y js. <a class="link-personalizado" href="https://front-end-r-parrilla.netlify.app/" target="_blank">Click</a></li>
-                    <li><span>GameShop: </span>Proyecto Front-End responsive desarrollado con html y css. <a class="link-personalizado" href="https://front-end-gameshop.netlify.app/" target="_blank">Click</a></li>
-                    <li><span>PetShop: </span>Proyecto Front-End responsive desarrollado con html y css. <a class="link-personalizado" href="https://front-end-petshop.netlify.app/" target="_blank">Click</a></li>
-                    <li><span>Héroes: </span>Proyecto Front-End responsive desarrollado con html y css. <a class="link-personalizado" href="https://front-end-heroes.netlify.app/" target="_blank">Click</a></li>
-                    <li><span>Pizzeria: </span>Proyecto Front-End desarrollado con html y css. <a class="link-personalizado" href="https://front-end-pizzeria.netlify.app/">Click</a></li>
-                    <li><span>Fundación: </span>Proyecto desarrollado de manera grupal con html, css, js, php, laravel y base de datos con mysql. <a class="link-personalizado" href="https://github.com/MaxiSoriano70/LARAVEL_Proyecto_Fundacion.git" target="_blank">Click</a></li>
-                    <li><span>Restaurante: </span>Proyecto desarrollado de manera grupal con html, css, js, php y base de datos con mysql. <a class="link-personalizado" href="https://github.com/MaxiSoriano70/ISDM_Practica_Profesional.git" target="_blank">Click</a></li>
-                    <li><span>Store AS Roma: </span>Proyecto desarrollado con html, css, php y base de datos con mysql. <a class="link-personalizado" href="https://github.com/MaxiSoriano70/ISDM_STORE_ASROMA.git" target="_blank">Click</a></li>
-                </ul>
-            </article>
-        </section>
-        <section id="ConocimientoTecnico">
-            <article class="tarjeta">
-                <h2><i class="fa-solid fa-screwdriver-wrench"></i> Con. técnicos</h2>
-                <div class="c-tecnicos">
-                    <div class="herramienta">
-                        <i class="fa-brands fa-html5"></i>
-                        <p>HTML</p>
+        <section id="experiencia" class="sExperiencia">
+            <h3 class="tituloExperiencia">Experiencia</h3>
+            <article class="aExperiencia">
+                <div class="cardExperiencia">
+                    <div class="cTitulo">
+                        <h4 class="tituloPuesto">Programador Informático</h4>
+                        <h4 class="tituloFecha">Diciembre 2024 - Junio 2025</h4>
                     </div>
-                    <div class="herramienta">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <p>CSS</p>
+                    <div class="cExpDescripcion">
+                        <div class="expDescripcion">
+                            <div class="expHeader">
+                                <span>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i>Remoto (San Salvador, El Salvador)</span> <a class="linkPageExp" href="http://www.consiti.com"><i class="fa-solid fa-link"></i> consiti.com</a>
+                            </div>
+                            <div class="expBody">
+                                <p>Desarrollé una API REST de datos climáticos con Java y Spring Boot, utilizando MySQL como base de datos. Además, implementé un chat inteligente en Node.js que interactúa con la API Gemini de Google, almacenando las conversaciones en MongoDB. También desarrollé el frontend con React para interfaces dinámicas. Manejo de llamadas HTTP, gestión de estados y consumo de APIs externas.</p>
+                            </div>
+                            <div class="expFooter">
+                                <span class="expIcono">
+                                    <i class="fa-brands fa-java"></i>
+                                    <span class="iconoNombre">Java</span>
+                                </span>
+                                <span class="expIcono">
+                                    <i class="fa-brands fa-node"></i>
+                                    <span class="iconoNombre">Node</span>
+                                </span>
+                                <span class="expIcono">
+                                    <i class="fa-brands fa-react"></i>
+                                    <span class="iconoNombre">React</span>
+                                </span>
+                                <span class="expIcono">
+                                    <i class="fa-solid fa-database"></i> <span class="iconoNombre">MySQL</span>
+                                </span>
+                                <span class="expIcono">
+                                    <i class="fa-solid fa-database"></i>
+                                    <span class="iconoNombre">MongoDB</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cImgExp">
+                            <img class="imgGrupoConsiti" src="./img/GConsiti.png" alt="logoGrupoConsiti">
+                        </div>
                     </div>
-                    <div class="herramienta">
-                        <i class="fa-brands fa-php"></i>
-                        <p>PHP</p>
+                </div>
+
+                <div class="cardExperiencia">
+                    <div class="cTitulo">
+                        <h4 class="tituloPuesto">Desarrollador Trainee</h4>
+                        <h4 class="tituloFecha">Abril 2022 - Noviembre 2022</h4>
                     </div>
-                    <div class="herramienta">
-                        <i class="fa-brands fa-java"></i>
-                        <p>Java</p>
-                    </div>
-                    <div class="herramienta">
-                        <i class="fa-brands fa-python"></i>
-                        <p>Python</p>
-                    </div>
-                    <div class="herramienta">
-                        <i class="fa-brands fa-laravel"></i>
-                        <p>Laravel</p>
-                    </div>
-                    <div class="herramienta">
-                        <i class="fa-brands fa-git"></i>
-                        <p>Git</p>
-                    </div>
-                    <div class="herramienta">
-                        <i class="fa-brands fa-github"></i>
-                        <p>GitHub</p>
+                    <div class="cExpDescripcion">
+                        <div class="expDescripcion">
+                            <div class="expHeader">
+                                <span>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i> Salta, Argentina</span> <a class="linkPageExp" href="https://siltium.com/"><i class="fa-solid fa-link"></i> silentiumapps.com</a>
+                            </div>
+                            <div class="expBody">
+                                <p>Desarrollé interfaces móviles con Flutter y trabajé de forma colaborativa con GitHub. Aprendí y apliqué C#, utilicé MySQL como base de datos y participé en proyectos guiados por metodologías ágiles.</p>
+                            </div>
+                            <div class="expFooter">
+                                <span class="expIcono">
+                                    <i class="fa-brands fa-flutter"></i>
+                                    <span class="iconoNombre">Flutter</span>
+                                </span>
+                                <span class="expIcono">
+                                    <span class="iconoCsharp">C#</span>
+                                </span>
+                                <span class="expIcono">
+                                    <i class="fa-solid fa-database"></i> <span class="iconoNombre">MySQL</span>
+                                </span>
+                                <span class="expIcono">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span class="iconoNombre">GitHub</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cImgExp">
+                            <div class="cImgExpSilentiumApps">
+                                <img class="imgSilentiumApps" src="./img/silentiumapps.jpg" alt="logoSilentiumApps">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><p>Maximiliano Soriano</p></li>
-                <li><a href="https://www.linkedin.com/in/maximiliano-soriano"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/MaxiSoriano70"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-        </nav>
+    <footer class="sFooter">
+        <H1>FOOTER</H1>
     </footer>
+    <script src="./js/header.js"></script>
 </body>
 </html>
