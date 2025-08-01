@@ -1,0 +1,226 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #F4B942;
+    --color07: #F0C808;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #cef9f3;
+    --colorFondoDark: #0E0E11;
+    --colorFondoTextDark: #18181B;
+}
+
+.sSobreMi{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 10px;
+}
+
+.tituloSobreMi{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.aSobreMi{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.cImgSobreMi {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: var(--colorBlanco);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.cImgSobreMi::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(var(--color01) 20deg, transparent 120deg);
+    animation: rotar 4s linear infinite;
+}
+
+.cImgSobreMi::after{
+    content: "";
+    position: absolute;
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    background-color: var(--colorBlanco);
+}
+
+.cImgSobreMi.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cImgSobreMi.dark::before{
+    background-image: conic-gradient(var(--color03) 20deg, transparent 120deg);
+}
+
+.cImgSobreMi.dark::after{
+    background-color: var(--colorFondoTextDark);
+}
+
+.logoProgramador {
+    width: 190px;
+    height: auto;
+    z-index: 2;
+}
+
+.cTxtSobreMi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 440px;
+    height: 305px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    background-color: var(--colorBlanco);
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.cTxtSobreMi::before{
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    background-image: conic-gradient(var(--color01) 20deg, transparent 120deg);
+    animation: rotar 4s linear infinite;
+}
+
+.cTxtSobreMi::after{
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 300px;
+    background-color: var(--colorBlanco);
+    border-radius: 10px;
+}
+
+.cTxtSobreMi.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cTxtSobreMi.dark::before{
+    background-image: conic-gradient(var(--color03) 20deg, transparent 120deg);
+}
+
+.cTxtSobreMi.dark::after{
+    background-color: var(--colorFondoTextDark);
+}
+
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.txtSobreMi{
+    z-index: 2;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (max-width: 750px) {
+    .aSobreMi{
+        gap: 10px;
+    }
+
+    .cImgSobreMi {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cImgSobreMi::before{
+        width: 400px;
+        height: 400px;
+    }
+
+    .cImgSobreMi::after{
+        width: 195px;
+        height: 195px;
+    }
+
+    .logoProgramador {
+        width: 140px;
+    }
+
+    .cTxtSobreMi {
+        width: 360px;
+        height: 290px;
+        padding: 0px 10px;
+    }
+
+    .cTxtSobreMi::before{
+        width: 450px;
+        height: 450px;
+    }
+
+    .cTxtSobreMi::after{
+        width: 355px;
+        height: 285px;
+    }
+
+    .txtSobreMi{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cImgSobreMi {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .cTxtSobreMi {
+        width: 300px;
+        height: 320px;
+        padding: 0px 10px;
+    }
+
+    .cTxtSobreMi::before{
+        width: 450px;
+        height: 450px;
+    }
+
+    .cTxtSobreMi::after{
+        width: 325px;
+        height: 315px;
+    }
+
+    .txtSobreMi{
+        font-size: 15px;
+    }
+}
