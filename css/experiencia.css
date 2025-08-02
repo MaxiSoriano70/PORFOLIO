@@ -212,8 +212,10 @@
 }
 
 .btnOtrosTrabajos{
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
     background-color: var(--color04);
     color: var(--colorBlanco);
     border: none;
@@ -233,14 +235,25 @@
     background-color: var(--color05);
 }
 
-.cOtrosTrabajos{
-    width: 100%;
+.cOtrosTrabajos {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
+
+.cOtrosTrabajos.activo {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 
 .cardOtraExp{
     width: 650px;

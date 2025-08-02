@@ -8,6 +8,25 @@ const btnHamburguesa = document.getElementById('btnHamburguesa');
         icon.classList.toggle('fa-xmark');
 });
 
+const btnOtrosTrabajos = document.querySelector('.btnOtrosTrabajos');
+const cOtrosTrabajos = document.querySelector('.cOtrosTrabajos');
+const iconoBtn = btnOtrosTrabajos.querySelector('i');
+
+btnOtrosTrabajos.addEventListener('click', () => {
+    const estaActivo = cOtrosTrabajos.classList.contains('activo');
+
+    if (estaActivo) {
+        cOtrosTrabajos.classList.remove('activo');
+        iconoBtn.classList.remove('fa-eye-slash');
+        iconoBtn.classList.add('fa-eye');
+    } else {
+        cOtrosTrabajos.classList.add('activo');
+        iconoBtn.classList.remove('fa-eye');
+        iconoBtn.classList.add('fa-eye-slash');
+    }
+});
+
+
 const btnLight = document.getElementById('btnLigth');
 const btnDark = document.getElementById('btnDark');
 const body = document.body;
