@@ -19,7 +19,9 @@ const elementosModoDark = [
     ...document.querySelectorAll('.iconoUbi'),
     ...document.querySelectorAll('.linkPageExp'),
     ...document.querySelectorAll('.cExpDescripcion'),
-    ...document.querySelectorAll('.cTitulo')
+    ...document.querySelectorAll('.cTitulo'),
+    ...document.querySelectorAll('.cTituloOtraExp'),
+    ...document.querySelectorAll('.cOtraExpDescripcion')
 ];
 
 btnLight.addEventListener('click', () => {

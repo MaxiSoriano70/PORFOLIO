@@ -214,7 +214,7 @@
 .btnOtrosTrabajos{
     display: inline-flex;
     align-items: center;
-    background-color: var(--color01);
+    background-color: var(--color04);
     color: var(--colorBlanco);
     border: none;
     padding: 10px;
@@ -222,11 +222,103 @@
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
     transition: background-color 0.3s ease;
 }
 
 .btnOtrosTrabajos:hover{
+    background-color: var(--color05);
+}
+
+.cOtrosTrabajos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardOtraExp{
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cTituloOtraExp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    background-color: var(--color01);
+    color: var(--colorBlanco);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    transition: background-color 0.3s ease;
+}
+
+.cTituloOtraExp.dark{
     background-color: var(--color02);
+}
+
+.tOtraExpPuesto{
+    font-size: 18px;
+}
+
+.tOtraExpFecha{
+    font-size: 18px;
+}
+
+.cOtraExpDescripcion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 10px;
+    background-color: var(--colorBlanco);
+    border-radius: 5px;
+    box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    transition: background-color 0.3s ease;
+}
+
+.cOtraExpDescripcion.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.otraExpHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.otraExpBody{
+    width: 100%;
+    font-weight: 400;
 }
 
 @keyframes show {
@@ -296,6 +388,34 @@
 
     .imgSilentiumApps {
         height: 60px;
+    }
+
+    .cardOtraExp{
+        width: 100%;
+    }
+
+    .cTituloOtraExp{
+        padding: 10px;
+    }
+
+    .tOtraExpPuesto{
+        font-size: 14px;
+    }
+
+    .tOtraExpFecha{
+        font-size: 14px;
+    }
+
+    .cOtraExpDescripcion{
+        padding: 10px;
+    }
+
+    .otraExpHeader{
+        font-size: 12px;
+    }
+
+    .otraExpBody{
+        font-size: 12px;
     }
 }
 
