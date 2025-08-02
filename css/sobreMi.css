@@ -43,7 +43,7 @@
     padding-top: 20px;
 }
 
-.cImgSobreMi {
+.cImgSobreMi{
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -78,6 +78,7 @@
     height: 245px;
     border-radius: 50%;
     background-color: var(--colorBlanco);
+    transition: background-color 0.3s ease;
 }
 
 .cImgSobreMi.dark{
@@ -98,7 +99,7 @@
     z-index: 2;
 }
 
-.cTxtSobreMi {
+.cTxtSobreMi{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +126,7 @@
     height: 600px;
     background-image: conic-gradient(var(--color01) 20deg, transparent 120deg);
     animation: rotar 4s linear infinite;
+    transition: background-color 0.3s ease;
 }
 
 .cTxtSobreMi::after{

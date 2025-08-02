@@ -69,9 +69,18 @@
     animation-timeline: view();
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
+    transition: background-color 0.3s ease;
+}
+
+.cTitulo.dark{
+    background-color: var(--color02);
 }
 
 .tituloPuesto{
+    font-size: 18px;
+}
+
+.tituloFecha{
     font-size: 18px;
 }
 
@@ -91,6 +100,11 @@
     animation-timeline: view();
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
+    transition: background-color 0.3s ease;
+}
+
+.cExpDescripcion.dark{
+    background-color: var(--colorFondoTextDark);
 }
 
 .expDescripcion{
@@ -113,11 +127,21 @@
 
 .iconoUbi{
     color: var(--color02);
+    transition: background-color 0.3s ease;
+}
+
+.iconoUbi.dark{
+    color: var(--color03);
 }
 
 .linkPageExp{
     text-decoration: none;
     color: var(--color02);
+    transition: background-color 0.3s ease;
+}
+
+.linkPageExp.dark{
+    color: var(--color03);
 }
 
 .expBody{
@@ -142,6 +166,11 @@
     background-color: var(--color02);
     color: var(--colorBlanco);
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.expIcono.dark{
+    background-color: var(--color03);
 }
 
 .iconoNombre{
@@ -182,6 +211,24 @@
     width: auto;
 }
 
+.btnOtrosTrabajos{
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color01);
+    color: var(--colorBlanco);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnOtrosTrabajos:hover{
+    background-color: var(--color02);
+}
+
 @keyframes show {
     from {
         opacity: 0;
@@ -190,5 +237,74 @@
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@media (max-width: 680px) {
+    .cardExperiencia{
+        width: 100%;
+    }
+
+    .cTitulo{
+        padding: 10px;
+    }
+
+    .tituloPuesto{
+        font-size: 16px;
+    }
+
+    .tituloFecha{
+        font-size: 16px;
+    }
+
+    .cExpDescripcion{
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .expDescripcion{
+        width: 100%;
+    }
+
+    .expFooter{
+        justify-content: center;
+    }
+
+    .iconoNombre{
+        font-size: 12px;
+    }
+
+    .iconoCsharp{
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .cImgExp{
+        width: 100%;
+    }
+
+    .imgGrupoConsiti{
+        width: 20%;
+    }
+
+    .cImgExpSilentiumApps {
+        width: 70px;
+        height: 70px;
+    }
+
+    .imgSilentiumApps {
+        height: 60px;
+    }
+}
+
+@media (max-width: 420px) {
+    .tituloPuesto{
+        font-size: 14px;
+    }
+
+    .tituloFecha{
+        font-size: 14px;
     }
 }
