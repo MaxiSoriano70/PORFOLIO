@@ -28,6 +28,10 @@
 .tituloSobreMi{
     font-size: 2rem;
     text-transform: uppercase;
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
 }
 
 .aSobreMi{
@@ -39,7 +43,7 @@
     padding-top: 20px;
 }
 
-.cImgSobreMi {
+.cImgSobreMi{
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -52,6 +56,10 @@
     box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.08),
     0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
 }
 
 .cImgSobreMi::before{
@@ -70,6 +78,7 @@
     height: 245px;
     border-radius: 50%;
     background-color: var(--colorBlanco);
+    transition: background-color 0.3s ease;
 }
 
 .cImgSobreMi.dark{
@@ -90,7 +99,7 @@
     z-index: 2;
 }
 
-.cTxtSobreMi {
+.cTxtSobreMi{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,6 +113,10 @@
     box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.08),
     0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
 }
 
 .cTxtSobreMi::before{
@@ -113,6 +126,7 @@
     height: 600px;
     background-image: conic-gradient(var(--color01) 20deg, transparent 120deg);
     animation: rotar 4s linear infinite;
+    transition: background-color 0.3s ease;
 }
 
 .cTxtSobreMi::after{
@@ -142,6 +156,17 @@
     }
     to{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 

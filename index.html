@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/sobreMi.css">
     <link rel="stylesheet" href="./css/experiencia.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Maximiliano Soriano</title>
 </head>
 <body>
@@ -34,13 +35,13 @@
         <nav>
             <ul class="navLinks">
                 <li class="link"><a class="aLink" href="#sobreMi"><i class="fa-solid fa-id-card"></i> Sobre mí</a></li>
-                <li class="link"><a class="aLink" href=""><i class="fa-solid fa-briefcase"></i> Expeciencia</a></li>
+                <li class="link"><a class="aLink" href="#experiencia"><i class="fa-solid fa-briefcase"></i> Expeciencia</a></li>
                 <li class="link"><a class="aLink" href=""><i class="fa-solid fa-code"></i> Poyectos</a></li>
             </ul>
         </nav>
         <div class="sBtns">
-            <button id="btnLigth" class="btnHeader"><i class="fa-regular fa-sun"></i> Light</button>
-            <button id="btnDark" class="btnHeader"><i class="fa-solid fa-moon"></i> Dark</button>
+            <button id="btnLigth" class="btnHeader"><i class="fa-regular fa-sun"></i></button>
+            <button id="btnDark" class="btnHeader"><i class="fa-solid fa-moon"></i></button>
             <button id="btnHamburguesa" class="btnHamburguesa"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
@@ -88,7 +89,7 @@
                         <div class="expDescripcion">
                             <div class="expHeader">
                                 <span>
-                                <i class="fa-solid fa-location-dot iconoUbi"></i>Remoto (San Salvador, El Salvador)</span> <a class="linkPageExp" href="http://www.consiti.com"><i class="fa-solid fa-link"></i> consiti.com</a>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i>Remoto (San Salvador, El Salvador)</span> <a class="linkPageExp" href="http://www.consiti.com" target="_blank"><i class="fa-solid fa-link"></i> consiti.com</a>
                             </div>
                             <div class="expBody">
                                 <p>Desarrollé una API REST de datos climáticos con Java y Spring Boot, utilizando MySQL como base de datos. Además, implementé un chat inteligente en Node.js que interactúa con la API Gemini de Google, almacenando las conversaciones en MongoDB. También desarrollé el frontend con React para interfaces dinámicas. Manejo de llamadas HTTP, gestión de estados y consumo de APIs externas.</p>
@@ -130,7 +131,7 @@
                         <div class="expDescripcion">
                             <div class="expHeader">
                                 <span>
-                                <i class="fa-solid fa-location-dot iconoUbi"></i> Salta, Argentina</span> <a class="linkPageExp" href="https://siltium.com/"><i class="fa-solid fa-link"></i> silentiumapps.com</a>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i> Salta, Argentina</span> <a class="linkPageExp" href="https://siltium.com/" target="_blank"><i class="fa-solid fa-link"></i> silentiumapps.com</a>
                             </div>
                             <div class="expBody">
                                 <p>Desarrollé interfaces móviles con Flutter y trabajé de forma colaborativa con GitHub. Aprendí y apliqué C#, utilicé MySQL como base de datos y participé en proyectos guiados por metodologías ágiles.</p>
@@ -159,11 +160,105 @@
                         </div>
                     </div>
                 </div>
+
+                <button class="btnOtrosTrabajos"><i class="fa-solid fa-eye"></i> Otros trabajos</button>
+
+                <div class="cOtrosTrabajos">
+                    <div class="cardOtraExp">
+                        <div class="cTituloOtraExp">
+                            <h4 class="tOtraExpPuesto">Auxiliar de Depósito</h4>
+                            <h4 class="tOtraExpFecha">Enero 2025 - Mayo 2025</h4>
+                        </div>
+                        <div class="cOtraExpDescripcion">
+                            <div class="otraExpHeader">
+                                <span>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i>Salta, Argentina</span> <span>Par Equipamentos</span>
+                            </div>
+                            <div class="otraExpBody">
+                                <p>Recepción, control y clasificación de mercadería. Etiquetado y ubicación de productos. Preparación de pedidos, control de stock y mantenimiento del orden en el depósito. Manipulación segura de productos frágiles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardOtraExp">
+                        <div class="cTituloOtraExp">
+                            <h4 class="tOtraExpPuesto">Atención al Cliente</h4>
+                            <h4 class="tOtraExpFecha">Noviembre 2023 - Marzo 2024</h4>
+                        </div>
+                        <div class="cOtraExpDescripcion">
+                            <div class="otraExpHeader">
+                                <span>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i>Salta, Argentina</span> <span>Tienda Balbi</span>
+                            </div>
+                            <div class="otraExpBody">
+                                <p>Atención al cliente, remarcar de precio, control de stock y reposición del mismo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardOtraExp">
+                        <div class="cTituloOtraExp">
+                            <h4 class="tOtraExpPuesto">Cajero</h4>
+                            <h4 class="tOtraExpFecha">Enero 2021 - Abril 2021</h4>
+                        </div>
+                        <div class="cOtraExpDescripcion">
+                            <div class="otraExpHeader">
+                                <span>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i>Salta, Argentina</span> <span>Super Vea</span>
+                            </div>
+                            <div class="otraExpBody">
+                                <p>Recepción, entrega y custodiar dinero en efectivo, cobros con tarjeta de crédito, debito y extracciones del cliente, a fin de lograr la recaudación de ingresos de la institución y la cancelación de pagos que correspondan a través de caja.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardOtraExp">
+                        <div class="cTituloOtraExp">
+                            <h4 class="tOtraExpPuesto">Profe. de Excel</h4>
+                            <h4 class="tOtraExpFecha">Octubre 2020 - Diciembre 2020</h4>
+                        </div>
+                        <div class="cOtraExpDescripcion">
+                            <div class="otraExpHeader">
+                                <span>
+                                <i class="fa-solid fa-location-dot iconoUbi"></i>Salta, Argentina</span> <span>Concesionaria Jeep</span>
+                            </div>
+                            <div class="otraExpBody">
+                                <p>Enseñe a resolver problemas de optimización, realizar análisis estadísticos, preparar diagramas recopilar información y crear listas, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
     <footer class="sFooter">
-        <H1>FOOTER</H1>
+        <section class="section-1">
+            <article class="aLogo">
+                <a class="linkLogo" href="/index.html">
+                    <div class="cLogo">
+                        <img class="logo" src="./img/logo.png" alt="Logo-Porlfolio">
+                    </div>
+                    <div class="cNombre">
+                        <span class="txtNombre">Maximiliano Soriano</span>
+                        <span class="txtNombre">Software Developer</span>
+                    </div>
+                </a>
+            </article>
+            <article class="box-nosotros">
+                <p>¡Muchas gracias por visitar mi portfolio! Espero que hayas disfrutado conociendo un poco más sobre mi trabajo y trayectoria.</p>
+            </article>
+            <article class="box-redes">
+                <a href="mailto:maxi.soriano.70.23@gmail.com" target="_blank" aria-label="Enviar email"><i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/maximiliano-soriano/" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MaxiSoriano70" target="_blank" aria-label="github"><i class="fa-brands fa-github"></i></a>
+            </article>
+        </section>
+        <section class="section-2">
+            <small>
+                &copy; 2025 <b>Maximiliano Soriano</b> - Todos los derechos reservados.
+            </small>
+        </section>
     </footer>
     <script src="./js/header.js"></script>
 </body>
