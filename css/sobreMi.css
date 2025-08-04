@@ -15,7 +15,7 @@
     --colorFondoTextDark: #18181B;
 }
 
-.sSobreMi{
+.sSobreMi {
     width: 100%;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     gap: 10px;
 }
 
-.tituloSobreMi{
+.tituloSobreMi {
     font-size: 2rem;
     text-transform: uppercase;
     animation-name: show;
@@ -34,7 +34,7 @@
     animation-fill-mode: both;
 }
 
-.aSobreMi{
+.aSobreMi {
     width: 100%;
     display: flex;
     align-items: start;
@@ -43,7 +43,7 @@
     padding-top: 20px;
 }
 
-.cImgSobreMi{
+.cImgSobreMi {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -54,15 +54,15 @@
     justify-content: center;
     position: relative;
     box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
     animation-name: show;
     animation-timeline: view();
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
 
-.cImgSobreMi::before{
+.cImgSobreMi::before {
     content: "";
     position: absolute;
     width: 500px;
@@ -71,7 +71,7 @@
     animation: rotar 4s linear infinite;
 }
 
-.cImgSobreMi::after{
+.cImgSobreMi::after {
     content: "";
     position: absolute;
     width: 245px;
@@ -81,15 +81,15 @@
     transition: background-color 0.3s ease;
 }
 
-.cImgSobreMi.dark{
+.cImgSobreMi.dark {
     background-color: var(--colorFondoTextDark);
 }
 
-.cImgSobreMi.dark::before{
+.cImgSobreMi.dark::before {
     background-image: conic-gradient(var(--color03) 20deg, transparent 120deg);
 }
 
-.cImgSobreMi.dark::after{
+.cImgSobreMi.dark::after {
     background-color: var(--colorFondoTextDark);
 }
 
@@ -99,7 +99,7 @@
     z-index: 2;
 }
 
-.cTxtSobreMi{
+.cTxtSobreMi {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,15 +111,15 @@
     position: relative;
     overflow: hidden;
     box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
     animation-name: show;
     animation-timeline: view();
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
 
-.cTxtSobreMi::before{
+.cTxtSobreMi::before {
     content: "";
     position: absolute;
     width: 800px;
@@ -129,7 +129,7 @@
     transition: background-color 0.3s ease;
 }
 
-.cTxtSobreMi::after{
+.cTxtSobreMi::after {
     content: "";
     position: absolute;
     width: 435px;
@@ -138,23 +138,24 @@
     border-radius: 10px;
 }
 
-.cTxtSobreMi.dark{
+.cTxtSobreMi.dark {
     background-color: var(--colorFondoTextDark);
 }
 
-.cTxtSobreMi.dark::before{
+.cTxtSobreMi.dark::before {
     background-image: conic-gradient(var(--color03) 20deg, transparent 120deg);
 }
 
-.cTxtSobreMi.dark::after{
+.cTxtSobreMi.dark::after {
     background-color: var(--colorFondoTextDark);
 }
 
 @keyframes rotar {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
@@ -164,13 +165,14 @@
         opacity: 0;
         transform: scale(0.1);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
     }
 }
 
-.txtSobreMi{
+.txtSobreMi {
     z-index: 2;
     background-color: transparent;
     font-weight: 500;
@@ -178,7 +180,7 @@
 }
 
 @media (max-width: 750px) {
-    .aSobreMi{
+    .aSobreMi {
         gap: 10px;
     }
 
@@ -187,12 +189,12 @@
         height: 200px;
     }
 
-    .cImgSobreMi::before{
+    .cImgSobreMi::before {
         width: 400px;
         height: 400px;
     }
 
-    .cImgSobreMi::after{
+    .cImgSobreMi::after {
         width: 195px;
         height: 195px;
     }
@@ -207,17 +209,17 @@
         padding: 0px 10px;
     }
 
-    .cTxtSobreMi::before{
+    .cTxtSobreMi::before {
         width: 450px;
         height: 450px;
     }
 
-    .cTxtSobreMi::after{
+    .cTxtSobreMi::after {
         width: 355px;
         height: 285px;
     }
 
-    .txtSobreMi{
+    .txtSobreMi {
         font-size: 16px;
     }
 }
@@ -235,17 +237,17 @@
         padding: 0px 10px;
     }
 
-    .cTxtSobreMi::before{
+    .cTxtSobreMi::before {
         width: 450px;
         height: 450px;
     }
 
-    .cTxtSobreMi::after{
+    .cTxtSobreMi::after {
         width: 325px;
         height: 315px;
     }
 
-    .txtSobreMi{
+    .txtSobreMi {
         font-size: 15px;
     }
 }

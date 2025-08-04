@@ -15,19 +15,19 @@
     --colorFondoTextDark: #18181B;
 }
 
-.banner{
+.banner {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px 15px;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.contenedorText{
+.contenedorText {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -37,26 +37,26 @@
     gap: 15px;
 }
 
-.banner .contenedorText .tituloPrincipal{
+.banner .contenedorText .tituloPrincipal {
     font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
     color: var(--color07);
 }
 
-.banner .contenedorText .tituloSecundario{
+.banner .contenedorText .tituloSecundario {
     font-size: 2.1rem;
     text-align: center;
     font-weight: 600;
 }
 
-.banner .contenedorText .textoBienvenida{
+.banner .contenedorText .textoBienvenida {
     font-size: 1.4rem;
     text-align: center;
     font-weight: 500;
 }
 
-.banner .contenedorText .contenedorSkills{
+.banner .contenedorText .contenedorSkills {
     width: 100%;
     display: flex;
     align-items: center;
@@ -71,20 +71,21 @@
 }
 
 @media screen and (max-width: 750px) {
+
     /*RESPONSIVE BANNER*/
-    .banner .contenedorText{
+    .banner .contenedorText {
         width: 100%;
     }
 
-    .banner .contenedorText .tituloPrincipal{
+    .banner .contenedorText .tituloPrincipal {
         font-size: 2rem;
     }
 
-    .banner .contenedorText .tituloSecundario{
+    .banner .contenedorText .tituloSecundario {
         font-size: 1.8rem;
     }
 
-    .banner .contenedorText .textoBienvenida{
+    .banner .contenedorText .textoBienvenida {
         font-size: 1rem;
     }
 
@@ -96,16 +97,17 @@
 }
 
 @media screen and (max-width: 445px) {
+
     /*DESCRIPCION BANNER*/
-    .banner .contenedorText .tituloPrincipal{
+    .banner .contenedorText .tituloPrincipal {
         font-size: 1.8rem;
     }
 
-    .banner .contenedorText .tituloSecundario{
+    .banner .contenedorText .tituloSecundario {
         font-size: 1.5rem;
     }
 
-    .banner .contenedorText .textoBienvenida{
+    .banner .contenedorText .textoBienvenida {
         font-size: 0.8rem;
     }
 

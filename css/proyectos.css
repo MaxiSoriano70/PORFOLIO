@@ -15,7 +15,7 @@
     --colorFondoTextDark: #18181B;
 }
 
-.sProyectos{
+.sProyectos {
     width: 100%;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     gap: 10px;
 }
 
-.tituloProyectos{
+.tituloProyectos {
     font-size: 2rem;
     text-transform: uppercase;
     animation-name: show;
@@ -34,7 +34,7 @@
     animation-fill-mode: both;
 }
 
-.navProyecto{
+.navProyecto {
     width: 500px;
     display: flex;
     position: relative;
@@ -47,7 +47,7 @@
     animation-fill-mode: both;
 }
 
-.linkTipoProyecto{
+.linkTipoProyecto {
     flex: 1;
     padding: 10px 20px;
     font-size: 18px;
@@ -63,7 +63,7 @@
     font-weight: 600;
 }
 
-.spanNavProyecto{
+.spanNavProyecto {
     position: absolute;
     top: 0;
     left: 0;
@@ -74,23 +74,23 @@
     transition: .5s;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(1):hover ~ .spanNavProyecto{
+.navProyecto .linkTipoProyecto:nth-child(1):hover~.spanNavProyecto {
     left: 0%;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(2):hover ~ .spanNavProyecto{
+.navProyecto .linkTipoProyecto:nth-child(2):hover~.spanNavProyecto {
     left: 25%;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(3):hover ~ .spanNavProyecto{
+.navProyecto .linkTipoProyecto:nth-child(3):hover~.spanNavProyecto {
     left: 50%;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(4):hover ~ .spanNavProyecto{
+.navProyecto .linkTipoProyecto:nth-child(4):hover~.spanNavProyecto {
     left: 75%;
 }
 
-.aProyectos{
+.aProyectos {
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,6 +105,7 @@
         opacity: 0;
         transform: scale(0.1);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
