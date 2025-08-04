@@ -83,6 +83,7 @@
     margin: 0;
     font-size: 1rem;
     color: var(--colorBlanco);
+    font-weight: 600;
 }
 
 .section-1 .box-redes {
