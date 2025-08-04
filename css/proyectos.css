@@ -1,0 +1,119 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #F4B942;
+    --color07: #F0C808;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #f1fcfb;
+    --colorFondoDark: #0E0E11;
+    --colorFondoTextDark: #18181B;
+}
+
+.sProyectos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 10px;
+}
+
+.tituloProyectos{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+}
+
+.navProyecto {
+    width: 500px;
+    display: flex;
+    position: relative;
+    background-color: var(--color03);
+    border-radius: 8px;
+    overflow: hidden;
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+}
+
+.linkTipoProyecto {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colorBlanco);
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.spanNavProyecto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: var(--color01);
+    transition: left 0.3s ease;
+    transition: .5s;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(1):hover ~ .spanNavProyecto {
+    left: 0%;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(2):hover ~ .spanNavProyecto {
+    left: 25%;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(3):hover ~ .spanNavProyecto {
+    left: 50%;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(4):hover ~ .spanNavProyecto {
+    left: 75%;
+}
+
+.aProyectos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 540px) {
+    .navProyecto {
+        width: 100%;
+    }
+
+    .linkTipoProyecto {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
