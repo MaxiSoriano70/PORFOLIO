@@ -1,3 +1,4 @@
+/* MENU RESPONSIVE */
 const btnHamburguesa = document.getElementById('btnHamburguesa');
     const navLinks = document.querySelector('.navLinks');
     const icon = btnHamburguesa.querySelector('i');
@@ -8,6 +9,7 @@ const btnHamburguesa = document.getElementById('btnHamburguesa');
         icon.classList.toggle('fa-xmark');
 });
 
+/* OTROS TRABAJOS */
 const btnOtrosTrabajos = document.querySelector('.btnOtrosTrabajos');
 const cOtrosTrabajos = document.querySelector('.cOtrosTrabajos');
 const iconoBtn = btnOtrosTrabajos.querySelector('i');
@@ -26,7 +28,7 @@ btnOtrosTrabajos.addEventListener('click', () => {
     }
 });
 
-
+/* WHITE O DARK */
 const btnLight = document.getElementById('btnLigth');
 const btnDark = document.getElementById('btnDark');
 const body = document.body;
@@ -55,4 +57,19 @@ btnDark.addEventListener('click', () => {
     elementosModoDark.forEach(el => el.classList.add('dark'));
     btnDark.style.display = 'none';
     btnLight.style.display = 'inline-flex';
+});
+
+/* MENU PROYECTOS */
+const links = document.querySelectorAll('.linkTipoProyecto');
+    const span = document.querySelector('.spanNavProyecto');
+
+    links.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        links.forEach(l => l.classList.remove('activo'));
+        link.classList.add('activo');
+
+        span.style.left = `${index * 25}%`;
+        });
 });

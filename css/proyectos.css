@@ -34,7 +34,7 @@
     animation-fill-mode: both;
 }
 
-.navProyecto {
+.navProyecto{
     width: 500px;
     display: flex;
     position: relative;
@@ -47,7 +47,7 @@
     animation-fill-mode: both;
 }
 
-.linkTipoProyecto {
+.linkTipoProyecto{
     flex: 1;
     padding: 10px 20px;
     font-size: 18px;
@@ -59,7 +59,11 @@
     box-sizing: border-box;
 }
 
-.spanNavProyecto {
+.linkTipoProyecto.activo {
+    font-weight: 600;
+}
+
+.spanNavProyecto{
     position: absolute;
     top: 0;
     left: 0;
@@ -70,19 +74,19 @@
     transition: .5s;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(1):hover ~ .spanNavProyecto {
+.navProyecto .linkTipoProyecto:nth-child(1):hover ~ .spanNavProyecto{
     left: 0%;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(2):hover ~ .spanNavProyecto {
+.navProyecto .linkTipoProyecto:nth-child(2):hover ~ .spanNavProyecto{
     left: 25%;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(3):hover ~ .spanNavProyecto {
+.navProyecto .linkTipoProyecto:nth-child(3):hover ~ .spanNavProyecto{
     left: 50%;
 }
 
-.navProyecto .linkTipoProyecto:nth-child(4):hover ~ .spanNavProyecto {
+.navProyecto .linkTipoProyecto:nth-child(4):hover ~ .spanNavProyecto{
     left: 75%;
 }
 
