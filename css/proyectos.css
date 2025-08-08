@@ -122,3 +122,138 @@
         padding: 10px;
     }
 }
+
+.aProyectos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardFullstack{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--colorBlanco);
+    border-radius: 5px;
+    border: solid 2px var(--color03);
+    gap: 16px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardFullstack:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
+                0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cIzquierda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgProyecto{
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    border: solid 2px var(--color03);
+}
+
+.cDerecha{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.categoriaProyecto{
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.categoriaFullStack {
+    color: var(--color02);
+    border-color: var(--color02);
+    background-color: rgba(31, 122, 122, 0.15);
+    font-weight: 500px;
+}
+
+.categoriaFrontEnd {
+    color: var(--color06);
+    border-color: var(--color06);
+    background-color: rgba(244, 185, 66, 0.15);
+    font-weight: 500px;
+}
+
+.categoriaBackEnd {
+    color: var(--color04);
+    border-color: var(--color04);
+    background-color: rgba(229, 29, 29, 0.15);
+    font-weight: 500px;
+}
+
+.tituloProyecto{
+    font-size: 20px;
+}
+
+.txtProyecto{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tecnologiasUsadas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.tUsadada {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 3px;
+    padding: 5px;
+    background-color: var(--color03);
+    color: var(--colorBlanco);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sGithub {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.btnGitHub {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--color02);
+    color: var(--colorBlanco);
+    transition: background-color 0.3s ease;
+}
+
+.btnGitHub:hover {
+    background-color: var(--color03);
+}
