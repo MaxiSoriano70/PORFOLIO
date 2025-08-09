@@ -90,16 +90,6 @@
     left: 75%;
 }
 
-.aProyectos {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 20px;
-}
-
 @keyframes show {
     from {
         opacity: 0;
@@ -123,12 +113,15 @@
     }
 }
 
-.aProyectos{
+
+.aProyectos {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
 }
 
 .cardFullstack{
@@ -144,7 +137,10 @@
     box-shadow:
         0 4px 6px rgba(0, 0, 0, 0.08),
         0 1px 3px rgba(0, 0, 0, 0.06);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
 .cardFullstack:hover {
@@ -188,6 +184,7 @@
     color: var(--color02);
     border-color: var(--color02);
     background-color: rgba(31, 122, 122, 0.15);
+    font-size: 16px;
     font-weight: 500px;
 }
 
@@ -195,6 +192,7 @@
     color: var(--color06);
     border-color: var(--color06);
     background-color: rgba(244, 185, 66, 0.15);
+    font-size: 16px;
     font-weight: 500px;
 }
 
@@ -202,6 +200,7 @@
     color: var(--color04);
     border-color: var(--color04);
     background-color: rgba(229, 29, 29, 0.15);
+    font-size: 16px;
     font-weight: 500px;
 }
 
@@ -256,4 +255,71 @@
 
 .btnGitHub:hover {
     background-color: var(--color03);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width:730px) {
+    .cardFullstack{
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .cardFullstack{
+        flex-direction: column;
+    }
+
+    .imgProyecto{
+        width: 340px;
+        height: auto;
+    }
+
+    .categoriaFullStack {
+        font-size: 14px;
+    }
+
+    .categoriaFrontEnd {
+        font-size: 14px;
+    }
+
+    .categoriaBackEnd {
+        font-size: 14px;
+    }
+
+    .tituloProyecto{
+        font-size: 16px;
+    }
+
+    .txtProyecto{
+        font-size: 14px;
+    }
+
+    .tecnologiasUsadas{
+        justify-content: center;
+    }
+
+    .tUsadada {
+        font-size: 12px;
+    }
+
+    .sGithub {
+        justify-content: center;
+    }
+
+    .btnGitHub {
+        font-size: 14px;
+    }
 }
