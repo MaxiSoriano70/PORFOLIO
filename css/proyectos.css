@@ -4,8 +4,8 @@
     --color03: #1F7A7A;
     --color04: #e51d1d;
     --color05: #f83b3b;
-    --color06: #F4B942;
-    --color07: #F0C808;
+    --color06: #652f79;
+    --color07: #7a3794;
     --color08: #f1fcfb;
     --color09: #DFF1FB;
     --colorNegro: #000000;
@@ -120,7 +120,7 @@
     padding: 16px;
     background-color: var(--colorBlanco);
     border-radius: 5px;
-    border: solid 2px var(--color03);
+    border: solid 2px var(--color02);
     gap: 16px;
     box-shadow:
         0 4px 6px rgba(0, 0, 0, 0.08),
@@ -133,6 +133,58 @@
 }
 
 .cardFullstack:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
+                0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardFrontEnd{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--colorBlanco);
+    border-radius: 5px;
+    border: solid 2px var(--color06);
+    gap: 16px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.cardFrontEnd:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
+                0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardBackEnd{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--colorBlanco);
+    border-radius: 5px;
+    border: solid 2px var(--color04);
+    gap: 16px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.cardBackEnd:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
                 0 3px 6px rgba(0, 0, 0, 0.08);
@@ -180,7 +232,7 @@
 .categoriaFrontEnd {
     color: var(--color06);
     border-color: var(--color06);
-    background-color: rgba(244, 185, 66, 0.15);
+    background-color: rgba(142, 68, 173, 0.15);
     font-size: 16px;
     font-weight: 500px;
 }
@@ -218,10 +270,23 @@
     font-weight: 500;
     gap: 3px;
     padding: 5px;
-    background-color: var(--color03);
-    color: var(--colorBlanco);
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+
+.fullStack{
+    background-color: var(--color03);
+    color: var(--colorBlanco);
+}
+
+.frontEnd{
+    background-color: var(--color07);
+    color: var(--colorBlanco);
+}
+
+.backEnd{
+    background-color: var(--color05);
+    color: var(--colorBlanco);
 }
 
 .sGithub {
@@ -229,6 +294,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    gap: 5px;
 }
 
 .btnGitHub {
@@ -237,13 +303,34 @@
     border-radius: 6px;
     font-weight: 500;
     text-decoration: none;
-    background-color: var(--color02);
-    color: var(--colorBlanco);
     transition: background-color 0.3s ease;
 }
 
-.btnGitHub:hover {
+.fullS{
+    background-color: var(--color02);
+    color: var(--colorBlanco);
+}
+
+.fullS:hover {
     background-color: var(--color03);
+}
+
+.frontE{
+    background-color: var(--color06);
+    color: var(--colorBlanco);
+}
+
+.frontE:hover {
+    background-color: var(--color07);
+}
+
+.backE{
+    background-color: var(--color04);
+    color: var(--colorBlanco);
+}
+
+.backE:hover {
+    background-color: var(--color05);
 }
 
 @keyframes show {
@@ -264,10 +351,30 @@
         padding: 10px;
         gap: 10px;
     }
+
+    .cardFrontEnd{
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .cardBackEnd{
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
 }
 
 @media (max-width:600px) {
     .cardFullstack{
+        flex-direction: column;
+    }
+
+    .cardFrontEnd{
+        flex-direction: column;
+    }
+
+    .cardBackEnd{
         flex-direction: column;
     }
 
