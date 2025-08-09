@@ -21,7 +21,7 @@
 
 .sFooter .section-1 {
     width: 100%;
-    background-color: var(--color02);
+    background-color: var(--color01);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -100,7 +100,7 @@
     justify-content: center;
     text-decoration: none;
     background-color: var(--colorFondoWhite);
-    color: var(--color02);
+    color: var(--color01);
     margin: 7.5px;
     border-radius: 50%;
     cursor: pointer;
@@ -109,7 +109,7 @@
 
 
 .section-1 .box-redes a:hover {
-    background-color: var(--color03);
+    background-color: var(--color02);
     color: var(--colorBlanco);
     transition: 0.2s linear;
 }
