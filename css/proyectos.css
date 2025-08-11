@@ -1,0 +1,483 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #e51d1d;
+    --color05: #f83b3b;
+    --color06: #652f79;
+    --color07: #7a3794;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #f1fcfb;
+    --colorFondoDark: #0E0E11;
+    --colorFondoTextDark: #18181B;
+}
+
+.sProyectos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 10px;
+}
+
+.tituloProyectos {
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+}
+
+.navProyecto {
+    width: 500px;
+    display: flex;
+    position: relative;
+    background-color: var(--color03);
+    border-radius: 8px;
+    overflow: hidden;
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+}
+
+.linkTipoProyecto {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colorBlanco);
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.linkTipoProyecto.activo {
+    font-weight: 600;
+}
+
+.spanNavProyecto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: var(--color01);
+    transition: left 0.3s ease;
+    transition: .5s;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(1):hover~.spanNavProyecto {
+    left: 0%;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(2):hover~.spanNavProyecto {
+    left: 25%;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(3):hover~.spanNavProyecto {
+    left: 50%;
+}
+
+.navProyecto .linkTipoProyecto:nth-child(4):hover~.spanNavProyecto {
+    left: 75%;
+}
+
+@media (max-width: 540px) {
+    .navProyecto {
+        width: 100%;
+    }
+
+    .linkTipoProyecto {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+.aProyectos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.cardFullstack{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--colorBlanco);
+    border-radius: 5px;
+    border: solid 2px var(--color02);
+    gap: 16px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.cardFullstack:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
+                0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardFullstack.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cardFullstack.dark:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2),
+                0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+.cardFrontEnd{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--colorBlanco);
+    border-radius: 5px;
+    border: solid 2px var(--color06);
+    gap: 16px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.cardFrontEnd:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
+                0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardFrontEnd.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cardFrontEnd.dark:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2),
+                0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+.cardBackEnd{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--colorBlanco);
+    border-radius: 5px;
+    border: solid 2px var(--color04);
+    gap: 16px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+    animation-name: show;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.cardBackEnd:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
+                0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardBackEnd.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cardBackEnd.dark:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2),
+                0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+.cIzquierda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgProyecto{
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fStack{
+    border: solid 2px var(--color02);
+}
+
+.fEnd{
+    border: solid 2px var(--color06);
+}
+
+.bEnd{
+    border: solid 2px var(--color04);
+}
+
+.cDerecha{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.categoriaProyecto{
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.categoriaFullStack {
+    color: var(--color02);
+    border-color: var(--color02);
+    background-color: rgba(31, 122, 122, 0.15);
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.categoriaFullStack.dark {
+    color: var(--colorBlanco);
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(31, 122, 122, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.categoriaFrontEnd {
+    color: var(--color06);
+    border-color: var(--color06);
+    background-color: rgba(142, 68, 173, 0.15);
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.categoriaFrontEnd.dark {
+    color: var(--colorBlanco);
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(142, 68, 173, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.categoriaBackEnd {
+    color: var(--color04);
+    border-color: var(--color04);
+    background-color: rgba(229, 29, 29, 0.15);
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.categoriaBackEnd.dark {
+    color: var(--colorBlanco);
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(229, 29, 29, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tituloProyecto{
+    font-size: 20px;
+}
+
+.txtProyecto{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tecnologiasUsadas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.tUsadada {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.fullStack{
+    background-color: var(--color03);
+    color: var(--colorBlanco);
+}
+
+.frontEnd{
+    background-color: var(--color07);
+    color: var(--colorBlanco);
+}
+
+.backEnd{
+    background-color: var(--color05);
+    color: var(--colorBlanco);
+}
+
+.sGithub {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.btnGitHub {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.fullS{
+    background-color: var(--color02);
+    color: var(--colorBlanco);
+}
+
+.fullS:hover {
+    background-color: var(--color03);
+}
+
+.frontE{
+    background-color: var(--color06);
+    color: var(--colorBlanco);
+}
+
+.frontE:hover {
+    background-color: var(--color07);
+}
+
+.backE{
+    background-color: var(--color04);
+    color: var(--colorBlanco);
+}
+
+.backE:hover {
+    background-color: var(--color05);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width:730px) {
+    .cardFullstack{
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .cardFrontEnd{
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .cardBackEnd{
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .cardFullstack{
+        flex-direction: column;
+    }
+
+    .cardFrontEnd{
+        flex-direction: column;
+    }
+
+    .cardBackEnd{
+        flex-direction: column;
+    }
+
+    .imgProyecto{
+        width: 340px;
+        height: auto;
+    }
+
+    .categoriaFullStack {
+        font-size: 14px;
+    }
+
+    .categoriaFrontEnd {
+        font-size: 14px;
+    }
+
+    .categoriaBackEnd {
+        font-size: 14px;
+    }
+
+    .tituloProyecto{
+        font-size: 16px;
+    }
+
+    .txtProyecto{
+        font-size: 14px;
+    }
+
+    .tecnologiasUsadas{
+        justify-content: center;
+    }
+
+    .tUsadada {
+        font-size: 12px;
+    }
+
+    .sGithub {
+        justify-content: center;
+    }
+
+    .btnGitHub {
+        font-size: 14px;
+    }
+}

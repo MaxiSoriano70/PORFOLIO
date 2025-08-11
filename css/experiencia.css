@@ -4,8 +4,8 @@
     --color03: #1F7A7A;
     --color04: #e51d1d;
     --color05: #f83b3b;
-    --color06: #F4B942;
-    --color07: #F0C808;
+    --color06: #652f79;
+    --color07: #7a3794;
     --color08: #f1fcfb;
     --color09: #DFF1FB;
     --colorNegro: #000000;
@@ -15,7 +15,7 @@
     --colorFondoTextDark: #18181B;
 }
 
-.sExperiencia{
+.sExperiencia {
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,16 +24,16 @@
     padding: 20px 15px;
 }
 
-.tituloExperiencia{
+.tituloExperiencia {
     font-size: 2rem;
     text-transform: uppercase;
     animation-name: show;
     animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 15% cover 40%;
     animation-fill-mode: both;
 }
 
-.aExperiencia{
+.aExperiencia {
     width: 100%;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     padding-top: 20px;
 }
 
-.cardExperiencia{
+.cardExperiencia {
     width: 650px;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
     gap: 5px;
 }
 
-.cTitulo{
+.cTitulo {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,28 +63,28 @@
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
     animation-name: show;
     animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 15% cover 40%;
     animation-fill-mode: both;
     transition: background-color 0.3s ease;
 }
 
-.cTitulo.dark{
+.cTitulo.dark {
     background-color: var(--color02);
 }
 
-.tituloPuesto{
+.tituloPuesto {
     font-size: 18px;
 }
 
-.tituloFecha{
+.tituloFecha {
     font-size: 18px;
 }
 
-.cExpDescripcion{
+.cExpDescripcion {
     width: 100%;
     display: flex;
     align-items: center;
@@ -94,20 +94,20 @@
     background-color: var(--colorBlanco);
     border-radius: 5px;
     box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
     animation-name: show;
     animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 15% cover 40%;
     animation-fill-mode: both;
     transition: background-color 0.3s ease;
 }
 
-.cExpDescripcion.dark{
+.cExpDescripcion.dark {
     background-color: var(--colorFondoTextDark);
 }
 
-.expDescripcion{
+.expDescripcion {
     width: 80%;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@
     gap: 10px;
 }
 
-.expHeader{
+.expHeader {
     width: 100%;
     display: flex;
     align-items: center;
@@ -125,31 +125,31 @@
     font-weight: 500;
 }
 
-.iconoUbi{
+.iconoUbi {
     color: var(--color02);
     transition: background-color 0.3s ease;
 }
 
-.iconoUbi.dark{
+.iconoUbi.dark {
     color: var(--color03);
 }
 
-.linkPageExp{
+.linkPageExp {
     text-decoration: none;
     color: var(--color02);
     transition: background-color 0.3s ease;
 }
 
-.linkPageExp.dark{
+.linkPageExp.dark {
     color: var(--color03);
 }
 
-.expBody{
+.expBody {
     width: 100%;
     font-weight: 400;
 }
 
-.expFooter{
+.expFooter {
     width: 100%;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@
     gap: 10px;
 }
 
-.expIcono{
+.expIcono {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -169,27 +169,27 @@
     transition: background-color 0.3s ease;
 }
 
-.expIcono.dark{
+.expIcono.dark {
     background-color: var(--color03);
 }
 
-.iconoNombre{
+.iconoNombre {
     font-size: 14px;
 }
 
-.iconoCsharp{
+.iconoCsharp {
     font-size: 14px;
     font-weight: 500;
 }
 
-.cImgExp{
+.cImgExp {
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imgGrupoConsiti{
+.imgGrupoConsiti {
     width: 100%;
     height: auto;
     background-color: #5216E7;
@@ -211,7 +211,7 @@
     width: auto;
 }
 
-.btnOtrosTrabajos{
+.btnOtrosTrabajos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,12 +226,12 @@
     cursor: pointer;
     animation-name: show;
     animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 15% cover 40%;
     animation-fill-mode: both;
     transition: background-color 0.3s ease;
 }
 
-.btnOtrosTrabajos:hover{
+.btnOtrosTrabajos:hover {
     background-color: var(--color05);
 }
 
@@ -255,7 +255,7 @@
     gap: 20px;
 }
 
-.cardOtraExp{
+.cardOtraExp {
     width: 650px;
     display: flex;
     align-items: center;
@@ -264,7 +264,7 @@
     gap: 5px;
 }
 
-.cTituloOtraExp{
+.cTituloOtraExp {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -275,28 +275,28 @@
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
     animation-name: show;
     animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 15% cover 40%;
     animation-fill-mode: both;
     transition: background-color 0.3s ease;
 }
 
-.cTituloOtraExp.dark{
+.cTituloOtraExp.dark {
     background-color: var(--color02);
 }
 
-.tOtraExpPuesto{
+.tOtraExpPuesto {
     font-size: 18px;
 }
 
-.tOtraExpFecha{
+.tOtraExpFecha {
     font-size: 18px;
 }
 
-.cOtraExpDescripcion{
+.cOtraExpDescripcion {
     width: 100%;
     display: flex;
     align-items: center;
@@ -307,20 +307,20 @@
     background-color: var(--colorBlanco);
     border-radius: 5px;
     box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.06);
     animation-name: show;
     animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 15% cover 40%;
     animation-fill-mode: both;
     transition: background-color 0.3s ease;
 }
 
-.cOtraExpDescripcion.dark{
+.cOtraExpDescripcion.dark {
     background-color: var(--colorFondoTextDark);
 }
 
-.otraExpHeader{
+.otraExpHeader {
     width: 100%;
     display: flex;
     align-items: center;
@@ -329,7 +329,7 @@
     font-weight: 500;
 }
 
-.otraExpBody{
+.otraExpBody {
     width: 100%;
     font-weight: 400;
 }
@@ -339,6 +339,7 @@
         opacity: 0;
         transform: scale(0.1);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -346,51 +347,51 @@
 }
 
 @media (max-width: 680px) {
-    .cardExperiencia{
+    .cardExperiencia {
         width: 100%;
     }
 
-    .cTitulo{
+    .cTitulo {
         padding: 10px;
     }
 
-    .tituloPuesto{
+    .tituloPuesto {
         font-size: 16px;
     }
 
-    .tituloFecha{
+    .tituloFecha {
         font-size: 16px;
     }
 
-    .cExpDescripcion{
+    .cExpDescripcion {
         flex-direction: column;
         padding: 10px;
         gap: 10px;
         font-size: 14px;
     }
 
-    .expDescripcion{
+    .expDescripcion {
         width: 100%;
     }
 
-    .expFooter{
+    .expFooter {
         justify-content: center;
     }
 
-    .iconoNombre{
+    .iconoNombre {
         font-size: 12px;
     }
 
-    .iconoCsharp{
+    .iconoCsharp {
         font-size: 12px;
         font-weight: 500;
     }
 
-    .cImgExp{
+    .cImgExp {
         width: 100%;
     }
 
-    .imgGrupoConsiti{
+    .imgGrupoConsiti {
         width: 20%;
     }
 
@@ -403,41 +404,41 @@
         height: 60px;
     }
 
-    .cardOtraExp{
+    .cardOtraExp {
         width: 100%;
     }
 
-    .cTituloOtraExp{
+    .cTituloOtraExp {
         padding: 10px;
     }
 
-    .tOtraExpPuesto{
+    .tOtraExpPuesto {
         font-size: 14px;
     }
 
-    .tOtraExpFecha{
+    .tOtraExpFecha {
         font-size: 14px;
     }
 
-    .cOtraExpDescripcion{
+    .cOtraExpDescripcion {
         padding: 10px;
     }
 
-    .otraExpHeader{
+    .otraExpHeader {
         font-size: 12px;
     }
 
-    .otraExpBody{
+    .otraExpBody {
         font-size: 12px;
     }
 }
 
 @media (max-width: 420px) {
-    .tituloPuesto{
+    .tituloPuesto {
         font-size: 14px;
     }
 
-    .tituloFecha{
+    .tituloFecha {
         font-size: 14px;
     }
 }

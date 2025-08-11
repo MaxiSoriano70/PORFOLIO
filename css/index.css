@@ -4,8 +4,8 @@
     --color03: #1F7A7A;
     --color04: #e51d1d;
     --color05: #f83b3b;
-    --color06: #F4B942;
-    --color07: #F0C808;
+    --color06: #652f79;
+    --color07: #7a3794;
     --color08: #f1fcfb;
     --color09: #DFF1FB;
     --colorNegro: #000000;
@@ -15,7 +15,7 @@
     --colorFondoTextDark: #18181B;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;

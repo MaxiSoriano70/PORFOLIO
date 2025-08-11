@@ -7,25 +7,40 @@
     <meta name="description" content="Portfolio profesional de Maximiliano Soriano, desarrollador web full stack.">
     <meta name="author" content="Maximiliano Soriano">
     <meta name="keywords" content="Desarrollador Web, Portfolio, Java, React, PHP, Laravel, Full Stack, IT, Maximiliano Soriano">
+
+    <!-- Google Fonts optimizado -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome no bloqueante -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    </noscript>
+
+    <!-- Imagen banner precargada -->
+    <link rel="preload" as="image" href="./img/banner.webp" type="image/webp">
+
+    <!-- CSS unificado -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/sobreMi.css">
     <link rel="stylesheet" href="./css/experiencia.css">
+    <link rel="stylesheet" href="./css/proyectos.css">
     <link rel="stylesheet" href="./css/footer.css">
+
     <title>Maximiliano Soriano</title>
 </head>
 <body>
     <header class="sHeader">
         <article class="aLogo">
             <a class="linkLogo" href="/index.html">
-                <div class="cLogo">
-                    <img class="logo" src="./img/logo.png" alt="Logo-Porlfolio">
-                </div>
+                <picture class="cLogo">
+                    <img class="logo" src="./img/logo.webp" width="512" height="512" alt="Logo-Porlfolio">
+                </picture>
                 <div class="cNombre">
                     <span class="txtNombre">Maximiliano Soriano</span>
                     <span class="txtNombre">Software Developer</span>
@@ -52,31 +67,33 @@
                 <h2 class=tituloSecundario>Maximiliano Soriano</h2>
                 <p class=textoBienvenida> ¡Bienvenid@! En este portfolio encontrarás una muestra de mis proyectos personales, mi formación académica y mi experiencia profesional en IT. Me apasiona seguir aprendiendo y desarrollar soluciones tecnológicas que aporten valor.
                 </p>
-                <div class=contenedorSkills>
-                    <img class="logoSkill" src="./img/java.png" alt="logoJava">
-                    <img class="logoSkill" src="./img/php.png" alt="logoPhp">
-                    <img class="logoSkill" src="./img/js.png" alt="logoJs">
-                    <img class="logoSkill" src="./img/spring-boot-logo.png" alt="logoSprintBoot">
-                    <img class="logoSkill" src="./img/mysql.png" alt="logoMysql">
-                    <img class="logoSkill" src="./img/html-5.png" alt="logoHtml">
-                    <img class="logoSkill" src="./img/css-3.png" alt="logoCss">
-                    <img class="logoSkill" src="./img/bootstrap.png" alt="logoBootstrap">
-                    <img class="logoSkill" src="./img/React.svg.png" alt="logoReact">
-                    <img class="logoSkill" src="./img/git.png" alt="logoGit">
-                </div>
+                <picture class=contenedorSkills>
+                    <img class="logoSkill" src="./img/java.webp" width="512" height="512" alt="logoJava">
+                    <img class="logoSkill" src="./img/php.webp" width="512" height="512" alt="logoPhp">
+                    <img class="logoSkill" src="./img/js.webp" width="512" height="512" alt="logoJs">
+                    <img class="logoSkill" src="./img/spring-boot-logo.webp" width="300" height="300" alt="logoSprintBoot">
+                    <img class="logoSkill" src="./img/mysql.webp" width="512" height="512" alt="logoMysql">
+                    <img class="logoSkill" src="./img/html-5.webp" width="512" height="512" alt="logoHtml">
+                    <img class="logoSkill" src="./img/css-3.webp" width="512" height="512" alt="logoCss">
+                    <img class="logoSkill" src="./img/bootstrap.webp" width="400" height="330" alt="logoBootstrap">
+                    <img class="logoSkill" src="./img/React.svg.webp" width="1422" height="1280" alt="logoReact">
+                    <img class="logoSkill" src="./img/git.webp" width="512" height="512" alt="logoGit">
+                </picture>
             </article>
         </section>
+
         <section id="sobreMi" class="sSobreMi">
             <h3 class="tituloSobreMi">Sobre mí</h3>
             <article class="aSobreMi">
-                <div class="cImgSobreMi">
-                    <img class="logoProgramador" src="./img/programador.png" alt="logoProgramador">
-                </div>
+                <picture class="cImgSobreMi">
+                    <img class="logoProgramador" src="./img/programador.webp" width="512" height="512" alt="logoProgramador">
+                </picture>
                 <div class="cTxtSobreMi">
                     <p class="txtSobreMi">Hola, me llamo Maximiliano Soriano y soy Desarrollador Web Full Stack en búsqueda de mi primera experiencia profesional en relación de dependencia en IT. Cuento con formación y experiencia adquirida en proyectos propios y prácticas profesionales en empresas del sector, utilizando tecnologías como Java (Spring Boot), React, PHP, Laravel, MySQL, HTML, CSS, JavaScript y Bootstrap. Me destaco por ser responsable, puntual y proactivo, con gran motivación por aprender, capacidad para resolver problemas, trabajar en equipo y adaptarme rápidamente a nuevos entornos y herramientas.</p>
                 </div>
             </article>
         </section>
+
         <section id="experiencia" class="sExperiencia">
             <h3 class="tituloExperiencia">Experiencia</h3>
             <article class="aExperiencia">
@@ -116,9 +133,9 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="cImgExp">
-                            <img class="imgGrupoConsiti" src="./img/GConsiti.png" alt="logoGrupoConsiti">
-                        </div>
+                        <picture class="cImgExp">
+                            <img class="imgGrupoConsiti" src="./img/GConsiti.webp" width="300" height="78" alt="logoGrupoConsiti">
+                        </picture>
                     </div>
                 </div>
 
@@ -153,11 +170,11 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="cImgExp">
+                        <picture class="cImgExp">
                             <div class="cImgExpSilentiumApps">
-                                <img class="imgSilentiumApps" src="./img/silentiumapps.jpg" alt="logoSilentiumApps">
+                                <img class="imgSilentiumApps" src="./img/silentiumapps.webp" width="140" height="140" alt="logoSilentiumApps">
                             </div>
-                        </div>
+                        </picture>
                     </div>
                 </div>
 
@@ -230,14 +247,332 @@
                 </div>
             </article>
         </section>
+
+        <section id="proyectos" class="sProyectos">
+            <h3 class="tituloProyectos">Proyectos</h3>
+            <article class="navProyecto">
+                <a class="linkTipoProyecto" href="">Todos</a>
+                <a class="linkTipoProyecto" href="">FullStack</a>
+                <a class="linkTipoProyecto" href="">Front end</a>
+                <a class="linkTipoProyecto" href="">Back end</a>
+                <span class="spanNavProyecto"></span>
+            </article>
+
+            <article class="aProyectos">
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndMOOTMATEUPATECO.webp" width="1900" height="1078" alt="FrontEndMOOTMATEUPATECO">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🦷 HealthDent</h4>
+                        <p class="txtProyecto">Proyecto responsive desarrollado en Digital House como parte de la formación Certified Tech Developer (becado). Aplicación web frontend enfocada en salud dental, que muestra dentistas desde una API, detalles, formulario de contacto y gestión de favoritos. Diseño moderno, accesible y adaptable a desktop, tablet y dispositivos móviles.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-react"></i> REACT JS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-DH-FRONTEND-III-REACTJS.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://clinica-odontologica-dh.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndMOOTMATEUPATECO.webp" width="1900" height="1078" alt="FrontEndMOOTMATEUPATECO">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🔥 Movie Fire</h4>
+                        <p class="txtProyecto">Plataforma web responsive para gestión y visualización de películas y series, desarrollada como trabajo práctico en el Bootcamp Full Stack de Rolling Code School (beca). Incluye registro e inicio de sesión, panel de administración, carruseles de contenido, modales con detalles y trailers, todo con diseño moderno y adaptable a distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-js"></i> JS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-RC-FRONT-END-MOVIES-E2.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://movies-fire.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndMOOTMATEUPATECO.webp" width="1900" height="1078" alt="FrontEndMOOTMATEUPATECO">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🐾 Patitas sin hogar</h4>
+                        <p class="txtProyecto">Plataforma web responsive para adopción y publicación de mascotas perdidas, desarrollada como proyecto personal. Incluye galería de animales, gestión de usuarios, secciones informativas y diseño atractivo adaptable a distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-js"></i> JS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-IITA-FRONT-END-PATITAS-SIN-HOGAR.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-patitas-sin-hogar.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndMOOTMATEUPATECO.webp" width="1900" height="1078" alt="FrontEndMOOTMATEUPATECO">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🧉 MootMate</h4>
+                        <p class="txtProyecto">Proyecto realizado como trabajo práctico en la Tecnicatura Universitaria en Desarrollo de Software (UPATECO). Aplicación web responsive que simula una plataforma colaborativa tipo Slack, con chats, reuniones online y gestión de usuarios y canales. El nombre y logo se inspiran en el mate, símbolo de encuentro y comunicación, reflejando la esencia del proyecto.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-js"></i> JS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-UPATECO-FRONT-END-MOOTMATE.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-moot-mate.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndRVIDRIOSRC.webp" width="1873" height="1079" alt="FrontEndRVIDRIOSRC">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🔮 Rolling Glass</h4>
+                        <p class="txtProyecto">Página web responsive para ecommerce de vidrios para el hogar, desarrollada como trabajo práctico en el Bootcamp Full Stack de Rolling Code School (beca). Incluye secciones de productos destacados, tienda, información institucional, formulario de suscripción y login, con un diseño moderno y adaptable a distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-js"></i> JS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-RC-FRONT-END-VIDRIOS-E1.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-vidrios-store.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndPARRILLADARC.webp" width="1900" height="1079"alt="FrontEndPARRILLADARC">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🍽️ R-Parrilla </h4>
+                        <p class="txtProyecto">Página web responsive para un restaurante especializado en parrilladas, desarrollada como trabajo práctico en el Bootcamp Full Stack de Rolling Code School (beca). Incluye secciones informativas, presentación del menú, formulario de contacto y equipo, con un diseño moderno y adaptable a distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-RC-FRONT-END-RPARRILLA.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-r-parrilla.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndPETSHOPAP.webp" width="1872" height="1079" alt="FrontEndPETSHOPAP">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🐾 PetShop</h4>
+                        <p class="txtProyecto">Página web responsive desarrollada en el curso Argentina Programa, dedicada a la venta de productos para mascotas. Incluye secciones de productos destacados, información de la empresa y presentación del equipo, con un diseño moderno y adaptable a distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-js"></i> JS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-DH-FRONT-END-I-PETSHOP-I.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-petshop-store.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndSPORTITPDH.webp" width="1873" height="1079" alt="FrontEndSPORTITPDH">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🏅 Sportit</h4>
+                        <p class="txtProyecto">Proyecto responsive desarrollado en Digital House como parte de la formación Certified Tech Developer (becado). Página web frontend para una plataforma deportiva con secciones de noticias en vivo, servicios, perfiles destacados y formulario de contacto. Diseño moderno y totalmente adaptable a dispositivos desktop, tablet y móvil.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-DH-FRONT-END-I-GYM" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-sportitdh.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndPETSHOPDH.webp" width="1902" height="1077" alt="FrontEndPETSHOPDH">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🐾 Pet Shop</h4>
+                        <p class="txtProyecto">Proyecto responsive desarrollado en Digital House como parte de la formación Certified Tech Developer (becado). Consiste en una página web frontend para una tienda de mascotas, con secciones de productos destacados, formularios de contacto y suscripción, y un diseño moderno adaptable a desktop, tablet y dispositivos móviles.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-DH-FRONT-END-I-PETSHOP-II.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-petshop.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndGAMESHOPDH.webp" width="1901" height="1079" alt="FrontEndGAMESHOPDH">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🎮 GameShop</h4>
+                        <p class="txtProyecto">Proyecto responsive desarrollado en Digital House como parte de la formación Certified Tech Developer (becado). Muestra un conjunto de tarjetas con información e imágenes de superhéroes, con estilos personalizados y diseño adaptable a distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-DH-FRONT-END-I-GAMESHOP.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-gameshop.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFrontEnd">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fEnd" src="./img/FrontEndHEROESDH.webp" width="1873" height="1078" alt="FrontEndHEROESDH">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFrontEnd">Front End</span>
+                        <h4 class="tituloProyecto">🦸‍♂️ Cards de Superhéroes</h4>
+                        <p class="txtProyecto">Proyecto responsive desarrollado en Digital House como parte de la formación en Certified Tech Developer (becado). Muestra un conjunto de tarjetas con información e imágenes de superhéroes, utilizando estilos personalizados y una estructura adaptable a distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada frontEnd"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub frontE" href="https://github.com/MaxiSoriano70/PF-DH-FRONT-END-I-HEROES.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub frontE" href="https://front-end-heroes.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> Ir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFullstack">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fStack" src="./img/FullStackLARAVELFundacion.webp" width="1895" height="900" alt="FullStackLARAVELFundacion">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFullStack">FullStack</span>
+                        <h4 class="tituloProyecto">Fundación</h4>
+                        <p class="txtProyecto">Sistema web para la gestión integral de cursos, estudiantes y personal en instituciones educativas. Permite administrar cursos con modalidades presencial y virtual, gestionar inscripciones, asignar docentes a comisiones y mantener la información institucional actualizada. Desarrollado como parte de un curso becado en Neoris junto a la Universidad Tecnológica Nacional (UTN), utilizando Laravel y Bootstrap, con un diseño responsive para una experiencia óptima en distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-laravel"></i> LARAVEL</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</span>
+                            <span class="tUsadada fullStack"><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub fullS" href="https://github.com/MaxiSoriano70/PF-NEORIS-LARAVEL-FUNDACION.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub fullS" href="https://drive.google.com/file/d/1g0FeUGLOUer3iDfHVIuLt_49DlK4swUC/view?usp=sharing" target="_blank"><i class="fa-solid fa-video"></i> Ver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFullstack">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fStack" src="./img/FullStackPHPRestaurante.webp" width="1900" height="1078" alt="FullStackPHPRestaurante">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFullStack">FullStack</span>
+                        <h4 class="tituloProyecto">Restaurante</h4>
+                        <p class="txtProyecto">Proyecto desarrollado como parte de mi formación académica en el Instituto del Milagro, que simula una aplicación web de gestión integral para restaurantes. Permite administrar pedidos, caja, inventario, menú y usuarios, además de incluir carrito de compras, control de proveedores, envío de correos y generación de facturas en PDF. Siguiendo un enfoque responsive para garantizar una correcta visualización en distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-js"></i> JS</span>
+                            <span class="tUsadada fullStack">AJAX</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="tUsadada fullStack"><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub fullS" href="https://github.com/MaxiSoriano70/PF-ISDM-PHP-RESTAURANTE.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub fullS" href="https://drive.google.com/file/d/1Ja79ZOOxTaaotMMjCRkuLrmncNmsiJeQ/view?usp=drive_link" target="_blank"><i class="fa-solid fa-video"></i> Ver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFullstack">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fStack" src="./img/FulllStackPHPASRoma.webp" width="1901" height="1079" alt="FulllStackPHPASRoma">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFullStack">FullStack</span>
+                        <h4 class="tituloProyecto">Tienda AS Roma</h4>
+                        <p class="txtProyecto">Proyecto desarrollado como parte de mi formación académica en el Instituto del Milagro, que simula un sistema de ventas online especializado en productos deportivos. Incluye navegación por categorías, visualización de productos con imágenes, gestión de carrito de compras y sistema de login básico. Siguiendo un enfoque responsive para una correcta visualización en distintos dispositivos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-js"></i> JS</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="tUsadada fullStack"><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub fullS" href="https://github.com/MaxiSoriano70/PF-ISDM-PHP-ASROMA.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub fullS" href="https://drive.google.com/file/d/1UQgWJJUqVRUzB8xXD94zxxMYkjds_FcZ/view?usp=drive_link" target="_blank"><i class="fa-solid fa-video"></i> Ver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardFullstack">
+                    <picture class="cIzquierda">
+                        <img class="imgProyecto fStack" src="./img/FullStackPHPAdmPersonas.webp" width="1899" height="1080" alt="FullStackPHPAdmPersonas">
+                    </picture>
+                    <div class="cDerecha">
+                        <span class="categoriaProyecto categoriaFullStack">FullStack</span>
+                        <h4 class="tituloProyecto">Gestión de Personas</h4>
+                        <p class="txtProyecto">Proyecto desarrollado como parte de mi formación académica en el Instituto del Milagro, que consiste en una aplicación web para gestionar usuarios asociados a provincias argentinas. Incluye registro de usuarios, listado y manejo de contraseñas, con un diseño responsive y gestión básica de relaciones en base de datos.</p>
+                        <div class="tecnologiasUsadas">
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</span>
+                            <span class="tUsadada fullStack"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="tUsadada fullStack"><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+                        <div class="sGithub">
+                            <a class="btnGitHub fullS" href="https://github.com/MaxiSoriano70/PF-ISDM-PHP-INFOCONTROL.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a class="btnGitHub fullS" href="https://drive.google.com/file/d/1Q4E-Cm8Picq1-r3v7JeWo5INt0ef7cLf/view?usp=drive_link" target="_blank"><i class="fa-solid fa-video"></i> Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
     <footer class="sFooter">
         <section class="section-1">
             <article class="aLogo">
                 <a class="linkLogo" href="/index.html">
-                    <div class="cLogo">
-                        <img class="logo" src="./img/logo.png" alt="Logo-Porlfolio">
-                    </div>
+                    <picture class="cLogo">
+                        <img class="logo" src="./img/logo.webp" width="512" height="512" alt="Logo-Porlfolio">
+                    </picture>
                     <div class="cNombre">
                         <span class="txtNombre">Maximiliano Soriano</span>
                         <span class="txtNombre">Software Developer</span>
@@ -260,6 +595,6 @@
             </small>
         </section>
     </footer>
-    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

@@ -4,8 +4,8 @@
     --color03: #1F7A7A;
     --color04: #e51d1d;
     --color05: #f83b3b;
-    --color06: #F4B942;
-    --color07: #F0C808;
+    --color06: #652f79;
+    --color07: #7a3794;
     --color08: #f1fcfb;
     --color09: #DFF1FB;
     --colorNegro: #000000;
@@ -15,7 +15,7 @@
     --colorFondoTextDark: #18181B;
 }
 
-.sHeader{
+.sHeader {
     background-color: var(--color01);
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@
     z-index: 1000;
 }
 
-.aLogo{
+.aLogo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,7 @@
     width: auto;
 }
 
-.cNombre{
+.cNombre {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -66,12 +66,12 @@
     gap: 5px;
 }
 
-.txtNombre{
+.txtNombre {
     color: var(--colorBlanco);
     font-weight: 500;
 }
 
-.navLinks{
+.navLinks {
     list-style: none;
 }
 
@@ -85,7 +85,7 @@
     transform: scale(1.05);
 }
 
-.aLink{
+.aLink {
     font-size: 18px;
     font-weight: 500;
     color: var(--colorBlanco);
@@ -97,7 +97,7 @@
     color: var(--color09);
 }
 
-.sBtns{
+.sBtns {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,11 +125,11 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-#btnLigth{
+#btnLigth {
     display: none;
 }
 
-.btnHamburguesa{
+.btnHamburguesa {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -151,7 +151,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-#btnHamburguesa{
+#btnHamburguesa {
     display: none;
 }
 
