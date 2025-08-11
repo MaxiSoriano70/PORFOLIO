@@ -21,10 +21,14 @@
     justify-content: center;
     padding: 30px 15px;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    image-set(
+        url("../img/banner.webp") type("image/webp")
+    );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--color08);
 }
 
 .contenedorText {

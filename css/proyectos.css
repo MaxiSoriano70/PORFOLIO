@@ -201,7 +201,18 @@
     width: 300px;
     height: auto;
     border-radius: 8px;
-    border: solid 2px var(--color03);
+}
+
+.fStack{
+    border: solid 2px var(--color02);
+}
+
+.fEnd{
+    border: solid 2px var(--color06);
+}
+
+.bEnd{
+    border: solid 2px var(--color04);
 }
 
 .cDerecha{
@@ -251,7 +262,7 @@
 
 .txtProyecto{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .tecnologiasUsadas{
