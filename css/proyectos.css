@@ -138,6 +138,15 @@
                 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
+.cardFullstack.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cardFullstack.dark:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2),
+                0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
 .cardFrontEnd{
     width: 700px;
     display: flex;
@@ -164,6 +173,15 @@
                 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
+.cardFrontEnd.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cardFrontEnd.dark:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2),
+                0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
 .cardBackEnd{
     width: 700px;
     display: flex;
@@ -188,6 +206,15 @@
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12),
                 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cardBackEnd.dark{
+    background-color: var(--colorFondoTextDark);
+}
+
+.cardBackEnd.dark:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2),
+                0 3px 6px rgba(255, 255, 255, 0.1);
 }
 
 .cIzquierda{
@@ -240,6 +267,14 @@
     font-weight: 500px;
 }
 
+.categoriaFullStack.dark {
+    color: var(--colorBlanco);
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(31, 122, 122, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .categoriaFrontEnd {
     color: var(--color06);
     border-color: var(--color06);
@@ -248,12 +283,28 @@
     font-weight: 500px;
 }
 
+.categoriaFrontEnd.dark {
+    color: var(--colorBlanco);
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(142, 68, 173, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .categoriaBackEnd {
     color: var(--color04);
     border-color: var(--color04);
     background-color: rgba(229, 29, 29, 0.15);
     font-size: 16px;
     font-weight: 500px;
+}
+
+.categoriaBackEnd.dark {
+    color: var(--colorBlanco);
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(229, 29, 29, 0.3);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .tituloProyecto{

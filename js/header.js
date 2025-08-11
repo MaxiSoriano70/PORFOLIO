@@ -42,7 +42,13 @@ const elementosModoDark = [
     ...document.querySelectorAll('.cExpDescripcion'),
     ...document.querySelectorAll('.cTitulo'),
     ...document.querySelectorAll('.cTituloOtraExp'),
-    ...document.querySelectorAll('.cOtraExpDescripcion')
+    ...document.querySelectorAll('.cOtraExpDescripcion'),
+    ...document.querySelectorAll('.categoriaFullStack'),
+    ...document.querySelectorAll('.categoriaFrontEnd'),
+    ...document.querySelectorAll('.categoriaBackEnd'),
+    ...document.querySelectorAll('.cardFullstack'),
+    ...document.querySelectorAll('.cardFrontEnd'),
+    ...document.querySelectorAll('.cardBackEnd')
 ];
 
 btnLight.addEventListener('click', () => {
