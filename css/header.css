@@ -2,12 +2,14 @@
     --color01: #0E3D3D;
     --color02: #145959;
     --color03: #1F7A7A;
-    --color04: #e51d1d;
-    --color05: #f83b3b;
+    --color04: #27304D;
+    --color05: #354573;
     --color06: #652f79;
     --color07: #7a3794;
     --color08: #f1fcfb;
     --color09: #DFF1FB;
+    --color10: #e51d1d;
+    --color11: #f83b3b;
     --colorNegro: #000000;
     --colorBlanco: #FFFFFF;
     --colorFondoWhite: #f1fcfb;
@@ -107,7 +109,7 @@
 .btnHeader {
     display: inline-flex;
     align-items: center;
-    background-color: var(--color04);
+    background-color: var(--color10);
     color: var(--colorBlanco);
     border: none;
     padding: 10px;
@@ -120,7 +122,7 @@
 }
 
 .btnHeader:hover {
-    background-color: var(--color05);
+    background-color: var(--color11);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }

@@ -2,12 +2,14 @@
     --color01: #0E3D3D;
     --color02: #145959;
     --color03: #1F7A7A;
-    --color04: #e51d1d;
-    --color05: #f83b3b;
+    --color04: #27304D;
+    --color05: #354573;
     --color06: #652f79;
     --color07: #7a3794;
     --color08: #f1fcfb;
     --color09: #DFF1FB;
+    --color10: #e51d1d;
+    --color11: #f83b3b;
     --colorNegro: #000000;
     --colorBlanco: #FFFFFF;
     --colorFondoWhite: #f1fcfb;
@@ -294,7 +296,7 @@
 .categoriaBackEnd {
     color: var(--color04);
     border-color: var(--color04);
-    background-color: rgba(229, 29, 29, 0.15);
+    background-color: rgba(39, 48, 77, 0.15);
     font-size: 16px;
     font-weight: 500px;
 }
@@ -302,7 +304,7 @@
 .categoriaBackEnd.dark {
     color: var(--colorBlanco);
     border-color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(229, 29, 29, 0.3);
+    background-color: rgba(39, 48, 77, 0.3);
     font-size: 16px;
     font-weight: 500;
 }
