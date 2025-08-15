@@ -1,0 +1,55 @@
+:root {
+    --color01: #0E3D3D;
+    --color02: #145959;
+    --color03: #1F7A7A;
+    --color04: #27304D;
+    --color05: #354573;
+    --color06: #652f79;
+    --color07: #7a3794;
+    --color08: #f1fcfb;
+    --color09: #DFF1FB;
+    --color10: #e51d1d;
+    --color11: #f83b3b;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorFondoWhite: #f1fcfb;
+    --colorFondoDark: #0E0E11;
+    --colorFondoTextDark: #18181B;
+}
+
+.aSocial {
+	position: fixed;
+	left: 0;
+	top: calc(50% - 90px);
+	z-index: 2000;
+}
+
+.aSocial .menuSocial {
+	list-style: none;
+}
+
+.aSocial .menuSocial .socialLink a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.iconEmail{
+    background-color: #FFA500;
+}
+
+.iconLinkedin{
+    background-color: #0077B5;
+}
+
+.iconGithub{
+    background-color: #6e40c9;
+}
+
+.aSocial .menuSocial .socialLink a:hover{
+    padding: 10px 30px;
+    background-color: var(--color01);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
