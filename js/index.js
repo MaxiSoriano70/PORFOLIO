@@ -67,15 +67,32 @@ btnDark.addEventListener('click', () => {
 
 /* MENU PROYECTOS */
 const links = document.querySelectorAll('.linkTipoProyecto');
-    const span = document.querySelector('.spanNavProyecto');
+const span = document.querySelector('.spanNavProyecto');
+const proyectos = document.querySelectorAll('.aProyectos > div'); // Cada card
 
-    links.forEach((link, index) => {
-        link.addEventListener('click', (e) => {
+links.forEach((link, index) => {
+    link.addEventListener('click', (e) => {
         e.preventDefault();
 
         links.forEach(l => l.classList.remove('activo'));
         link.classList.add('activo');
 
         span.style.left = `${index * 25}%`;
+
+        const filtro = link.textContent.trim().toLowerCase();
+
+        proyectos.forEach(card => {
+            card.style.display = 'none';
+
+            if (filtro === 'todos') {
+                card.style.display = 'flex';
+            } else if (filtro === 'fullstack' && card.classList.contains('cardFullstack')) {
+                card.style.display = 'flex';
+            } else if (filtro === 'front end' && card.classList.contains('cardFrontEnd')) {
+                card.style.display = 'flex';
+            } else if (filtro === 'back end' && card.classList.contains('cardBackEnd')) {
+                card.style.display = 'flex';
+            }
         });
+    });
 });

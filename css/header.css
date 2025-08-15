@@ -135,7 +135,7 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    background-color: var(--color04);
+    background-color: var(--color10);
     color: var(--colorBlanco);
     border: none;
     padding: 10px 10px;
@@ -148,7 +148,7 @@
 }
 
 .btnHamburguesa:hover {
-    background-color: var(--color05);
+    background-color: var(--color11);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
