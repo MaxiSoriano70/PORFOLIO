@@ -53,3 +53,19 @@
     background-color: var(--color01);
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
+
+@media (max-width: 600px) {
+    .aSocial {
+        top: calc(50% - 200px);
+    }
+
+    .aSocial .menuSocial .socialLink a {
+        padding: 10px;
+    }
+
+    .aSocial .menuSocial .socialLink a:hover{
+        padding: 10px 15px;
+        background-color: var(--color01);
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+}

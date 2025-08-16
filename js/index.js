@@ -51,24 +51,34 @@ const elementosModoDark = [
     ...document.querySelectorAll('.cardBackEnd')
 ];
 
-btnLight.addEventListener('click', () => {
-    body.classList.remove('dark');
-    elementosModoDark.forEach(el => el.classList.remove('dark'));
-    btnLight.style.display = 'none';
-    btnDark.style.display = 'inline-flex';
+function aplicarTema(modo) {
+    if (modo === 'dark') {
+        body.classList.add('dark');
+        elementosModoDark.forEach(el => el.classList.add('dark'));
+        btnDark.style.display = 'none';
+        btnLight.style.display = 'inline-flex';
+    } else {
+        body.classList.remove('dark');
+        elementosModoDark.forEach(el => el.classList.remove('dark'));
+        btnLight.style.display = 'none';
+        btnDark.style.display = 'inline-flex';
+    }
+    localStorage.setItem('modo', modo);
+}
+
+btnLight.addEventListener('click', () => aplicarTema('light'));
+btnDark.addEventListener('click', () => aplicarTema('dark'));
+
+document.addEventListener('DOMContentLoaded', () => {
+    const modoGuardado = localStorage.getItem('modo') || 'light';
+    aplicarTema(modoGuardado);
 });
 
-btnDark.addEventListener('click', () => {
-    body.classList.add('dark');
-    elementosModoDark.forEach(el => el.classList.add('dark'));
-    btnDark.style.display = 'none';
-    btnLight.style.display = 'inline-flex';
-});
 
 /* MENU PROYECTOS */
 const links = document.querySelectorAll('.linkTipoProyecto');
 const span = document.querySelector('.spanNavProyecto');
-const proyectos = document.querySelectorAll('.aProyectos > div'); // Cada card
+const proyectos = document.querySelectorAll('.aProyectos > div');
 
 links.forEach((link, index) => {
     link.addEventListener('click', (e) => {
