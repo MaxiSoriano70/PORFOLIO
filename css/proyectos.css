@@ -430,6 +430,10 @@
 }
 
 @media (max-width:600px) {
+    .sProyectos {
+        padding: 20px 15px;
+    }
+
     .cardFullstack{
         flex-direction: column;
     }

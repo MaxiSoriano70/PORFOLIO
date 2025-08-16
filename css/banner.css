@@ -103,6 +103,9 @@
 }
 
 @media screen and (max-width: 445px) {
+    .banner {
+        padding: 30px 25px;
+    }
 
     /*DESCRIPCION BANNER*/
     .banner .contenedorText .tituloPrincipal {
